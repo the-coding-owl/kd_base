@@ -49,6 +49,6 @@ baseconfig{
         
     }
     navigation{
-
+        mainEntry = 
     }
 }
