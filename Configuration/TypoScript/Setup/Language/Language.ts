@@ -11,7 +11,7 @@ config{
     linkVars = L
     language = {$baseconfig.language.default.language}
     locale_all = {$baseconfig.language.default.locale_all}
-    metaCharset = {$baseconfig.language.default.metaCharset}
+    metaCharset = {$baseconfig.language.config.metaCharset}
     sys_language_mode = {$baseconfig.language.config.sys_language_mode}
     sys_language_overlay = {$baseconfig.language.config.sys_language_overlay}
 }
@@ -20,7 +20,6 @@ config{
     sys_language_uid = {$baseconfig.language.de.sys_language_uid}
     language = {$baseconfig.language.de.language}
     locale_all = {$baseconfig.language.de.locale_all}
-    metaCharset = {$baseconfig.language.de.metaCharset}
 }
 [global]
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:kd_base/Configuration/TypoScript/Setup/Language/LanguageNavigation.ts">

@@ -11,11 +11,23 @@ page = PAGE
 page{
     10 = FLUIDTEMPLATE
     10{
-        file = EXT:kd_base/Resources/Private/Templates/contentpage.html
+        file = EXT:kd_base/Resources/Private/Templates/Site.html
         partialRootPath = EXT:kd_base/Resources/Private/Partials/
         layoutRootPath = EXT:kd_base/Resources/Private/Layouts/
 
         variables{
+            layout = CASE
+            layout{
+                key.field = backend_layout
+                default = TEXT
+                default{
+                    value = startpage
+                }
+                1 < .default
+                1.value = sidebarleft
+                2 < .default
+                2.value = sidebarright
+            }
             pagetitle < lib.pagetitle
             logo < lib.logo
             mainNavigation < lib.mainNavigation

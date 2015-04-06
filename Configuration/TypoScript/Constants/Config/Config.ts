@@ -40,15 +40,39 @@ baseconfig{
             sys_language_mode = content_fallback
             # cat=language//20; type=string; label= Sys language overlay
             sys_language_overlay = hideNonTranslated
+            # cat=language//30; type=string; label= Sys language overlay
+            metaCharset = utf-8
         }
         default{
-            
+            # cat=language/default/10; type=string; label= Sys language uid
+            sys_language_uid = 0
+            # cat=language/default/20; type=string; label= Language
+            language = en
+            # cat=language/default/30; type=string; label= Language locale
+            locale_all = en_GB
+            # cat=language/default/40; type=string; label= Text for the language menu
+            langText = English
+        }
+        de{
+            # cat=language/german/10; type=string; label= Sys language uid
+            sys_language_uid = 1
+            # cat=language/german/20; type=string; label= Language
+            language = de
+            # cat=language/german/30; type=string; label= Language locale
+            locale_all = de_DE
+            # cat=language/german/40; type=string; label= Text for the language menu
+            langText = Deutsch
         }
     }
     socials{
         
     }
     navigation{
+        # cat=navigation//10; type=int+; label= Page uid of the Main Menu entry point
         mainEntry = 
+        # cat=navigation//20; type=int+; label= Page uid of the Meta Menu entry point
+        metaEntry = 
+        # cat=navigation//30; type=int+; label= Page uid of the Footer Menu entry point
+        footerEntry = 
     }
 }
