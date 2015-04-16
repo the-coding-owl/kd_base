@@ -75,4 +75,7 @@ baseconfig{
         # cat=navigation//30; type=int+; label= Page uid of the Footer Menu entry point
         footerEntry = 
     }
+
+    #cat=base/enable/40; type=boolean; label= Enable admin panel
+    adminPanel = 
 }

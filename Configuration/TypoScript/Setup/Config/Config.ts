@@ -10,5 +10,5 @@ config{
     prefixLocalAnchors = all
     baseUrl = {$baseconfig.baseUrl.protocoll}{$baseconfig.baseUrl.server}/
     absRefPrefix = {$baseconfig.absRefPrefix}
-    
+    adminPanel = {$baseconfig.adminPanel}
 }
