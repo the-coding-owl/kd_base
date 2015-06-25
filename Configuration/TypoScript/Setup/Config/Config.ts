@@ -12,3 +12,6 @@ config{
     absRefPrefix = {$baseconfig.absRefPrefix}
     adminPanel = {$baseconfig.adminPanel}
 }
+[globalVar = LIT:0 = {$baseconfig.baseUrl.enable}]
+config.baseUrl >
+[global]

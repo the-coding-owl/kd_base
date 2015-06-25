@@ -1,31 +1,13 @@
-<f:if condition="{layout}">
-    <f:then>
-        <f:switch expression="{layout}">
-            <f:case default="TRUE">
-                <f:layout name="default" />
-            </f:case>
-            <f:case value="sidebarleft">
-                <f:layout name="sidebarleft" />
-            </f:case>
-            <f:case value="sidebarright">
-                <f:layout name="sidebarright" />
-            </f:case>
-        </f:switch>
-    </f:then>
-    <f:else>
-        <f:layout name="default" />
-    </f:else>
-</f:if>
-
+<f:layout name="{layout}" />
 
 <f:section name="main">
-    
+    <f:format.html>{content}</f:format.html>
 </f:section>
 
-<f:section name="sidebarleft">
-    <f:render partial="subnavigation" />
+<f:section name="leftContent">
+    <f:render partial="subnavigation" arguments="{_all}" />
 </f:section>
 
-<f:section name="sidebarright">
-    <f:render partial="subnavigation" />
+<f:section name="rightContent">
+    <f:render partial="subnavigation" arguments="{_all}" />
 </f:section>

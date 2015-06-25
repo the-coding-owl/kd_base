@@ -12,6 +12,45 @@ page.includeCSS{
 page.includeCSSLibs{
     
 }
+[globalVar = LIT:1 = {$baseconfig.bootstrap.enable} && globalVar = LIT:0 = {$baseconfig.bootstrap.local}]
+page.includeCSSLibs{
+    bootstrap = {$baseconfig.bootstrap.cdnUrl}
+    bootstrap.external = 1
+    bootstrap-theme = {$baseconfig.bootstrap.theme.cdnUrl}
+    bootstrap-theme.external = 1
+}
+page.includeJSFooterLibs{
+    bootstrap = {$baseconfig.bootstrap.js.cdnUrl}
+    bootstrap.external = 1
+}
+[global]
+[globalVar = LIT:1 = {$baseconfig.bootstrap.enable}] && [globalVar = LIT:1 = {$baseconfig.bootstrap.cdn}] && [globalVar = LIT:0 = {$baseconfig.bootstrap.local}]
+page.includeCSSLibs{
+    bootstrap.ifEmpty = //maxcdn.bootstrapcdn.com/bootstrap/{$baseconfig.bootstrap.version}/css/bootstrap.min.css
+    bootstrap.external = 1
+    bootstrap-theme.ifEmpty = //maxcdn.bootstrapcdn.com/bootstrap/{$baseconfig.bootstrap.version}/css/bootstrap-theme.min.css
+    bootstrap-theme.external = 1
+}
+page.includeJSFooterLibs{
+    bootstrap.ifEmpty = //maxcdn.bootstrapcdn.com/bootstrap/{$baseconfig.bootstrap.version}/js/bootstrap.min.js
+    bootstrap.external = 1
+}
+[global]
+[globalVar = LIT:1 = {$baseconfig.bootstrap.enable}] && [globalVar = LIT:1 = {$baseconfig.bootstrap.local}]
+page.includeCSSLibs{
+    bootstrap = {$baseconfig.bootstrap.localPath}/bootstrap-{$baseconfig.bootstrap.version}.min.css
+    bootstrap.external = 0
+    bootstrap.ifEmpty = EXT:kd_base/Resources/Public/Stylesheets/Bootstrap/bootstrap-{$baseconfig.bootstrap.version}.min.css
+    bootstrap-theme = {$baseconfig.bootstrap.localPath}/bootstrap-{$baseconfig.bootstrap.version}-theme.min.css
+    bootstrap-theme.external = 0
+    bootstrap-theme.ifEmpty = EXT:kd_base/Resources/Public/Stylesheets/Bootstrap/bootstrap-{$baseconfig.bootstrap.version}-theme.min.css
+} 
+page.includeJSFooterLibs{
+    bootstrap = {$baseconfig.bootstrap.localPath}/bootstrap-{$baseconfig.bootstrap.version}.min.js
+    bootstrap.external = 0
+    bootstrap.ifEmpty = EXT:kd_base/Resources/Public/Javascripts/Bootstrap/bootstrap-{$baseconfig.bootstrap.version}.min.js
+}  
+[global]
 page.includeJS{
     template = EXT:kd_base/Resources/Public/Javascripts/template.js
 }
@@ -21,31 +60,31 @@ page.includeJSFooterLibs{
     jQuery.external = 1
 }
 [global]
-[globalVar = LIT:1 = {$baseconfig.jquery.enable}] && [globalVar = LIT:0 = {$baseconfig.jquery.cdn}] && [globalVar = LIT:0 = {$baseconfig.jquery.local}]
+[globalVar = LIT:1 = {$baseconfig.jquery.enable}] && [globalVar = LIT:1 = {$baseconfig.jquery.cdn}] && [globalVar = LIT:0 = {$baseconfig.jquery.local}]
 page.includeJSFooterLibs{
     jQuery.ifEmpty = //code.jquery.com/jquery-{$baseconfig.jquery.version}.min.js
     jQuery.external = 1
 }
 [global]
-[globalVar = LIT:1 = {$baseconfig.jquery.enable}] && [globalVar = LIT:1 = {$baseconfig.jquery.cdn}] && [globalVar = LIT:0 = {$baseconfig.jquery.local}]
+[globalVar = LIT:1 = {$baseconfig.jquery.enable}] && [globalVar = LIT:2 = {$baseconfig.jquery.cdn}] && [globalVar = LIT:0 = {$baseconfig.jquery.local}]
 page.includeJSFooterLibs{
     jQuery.ifEmpty = //ajax.googleapis.com/ajax/libs/jquery/{$baseconfig.jquery.version}/jquery.min.js
     jQuery.external = 1
 }
 [global]
-[globalVar = LIT:1 = {$baseconfig.jquery.enable}] && [globalVar = LIT:2 = {$baseconfig.jquery.cdn}] && [globalVar = LIT:0 = {$baseconfig.jquery.local}]
+[globalVar = LIT:1 = {$baseconfig.jquery.enable}] && [globalVar = LIT:3 = {$baseconfig.jquery.cdn}] && [globalVar = LIT:0 = {$baseconfig.jquery.local}]
 page.includeJSFooterLibs{
     jQuery.ifEmpty = //ajax.aspnetcdn.com/ajax/jQuery/jquery-{$baseconfig.jquery.version}.min.js
     jQuery.external = 1
 }
 [global]
-[globalVar = LIT:1 = {$baseconfig.jquery.enable}] && [globalVar = LIT:3 = {$baseconfig.jquery.cdn}] && [globalVar = LIT:0 = {$baseconfig.jquery.local}]
+[globalVar = LIT:1 = {$baseconfig.jquery.enable}] && [globalVar = LIT:4 = {$baseconfig.jquery.cdn}] && [globalVar = LIT:0 = {$baseconfig.jquery.local}]
 page.includeJSFooterLibs{
     jQuery.ifEmpty = //cdnjs.cloudflare.com/ajax/libs/jquery/{$baseconfig.jquery.version}/jquery.min.js
     jQuery.external = 1
 }
 [global]
-[globalVar = LIT:1 = {$baseconfig.jquery.enable}] && [globalVar = LIT:4 = {$baseconfig.jquery.cdn}] && [globalVar = LIT:0 = {$baseconfig.jquery.local}]
+[globalVar = LIT:1 = {$baseconfig.jquery.enable}] && [globalVar = LIT:5 = {$baseconfig.jquery.cdn}] && [globalVar = LIT:0 = {$baseconfig.jquery.local}]
 page.includeJSFooterLibs{
     jQuery.ifEmpty = //cdn.jsdelivr.net/jquery/{$baseconfig.jquery.version}/jquery.min.js
     jQuery.external = 1

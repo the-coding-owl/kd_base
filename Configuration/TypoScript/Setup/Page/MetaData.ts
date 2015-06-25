@@ -6,3 +6,11 @@
  *
  *    Coded with Netbeans!
  */
+page.meta{
+        charset = utf-8
+        description.field = description
+        keywords.field = keywords
+        abstract.field = abstract
+        author.field = author
+        
+}

@@ -6,3 +6,4 @@
  *
  *    Coded with Netbeans!
  */
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:kd_base/Configuration/TypoScript/Constants/Config/Config.ts">
