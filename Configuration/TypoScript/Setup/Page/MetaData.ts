@@ -7,10 +7,20 @@
  *    Coded with Netbeans!
  */
 page.meta{
-        charset = utf-8
-        description.field = description
-        keywords.field = keywords
-        abstract.field = abstract
-        author.field = author
-        
+    description{
+        data = page:description
+        ifEmpty.data = levelfield: -1, description, slide
+    }
+    keywords{
+        data = page:keywords
+        ifEmpty.data = levelfield: -1, keywords, slide
+    }
+    abstract{
+        data = page:abstract
+        ifEmpty.data = levelfield: -1, abstract, slide
+    }
+    author{
+        data = page:author
+        ifEmpty.data = levelfield: -1, author, slide
+    }
 }
