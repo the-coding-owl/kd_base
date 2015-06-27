@@ -68,7 +68,7 @@ baseconfig{
             metaCharset = utf-8
         }
         default{
-            # cat=language/default/10; type=string; label= Sys language uid
+            # cat=language/default/10; type=int+; label= Sys language uid
             sys_language_uid = 0
             # cat=language/default/20; type=string; label= Language
             language = en
@@ -78,7 +78,7 @@ baseconfig{
             langText = English
         }
         de{
-            # cat=language/german/10; type=string; label= Sys language uid
+            # cat=language/german/10; type=int+; label= Sys language uid
             sys_language_uid = 1
             # cat=language/german/20; type=string; label= Language
             language = de
@@ -89,7 +89,14 @@ baseconfig{
         }
     }
     socials{
-        
+        facebook{
+            # cat=socials/facebook/10; type=string; label= Url to the facebook profile
+            url = https://facebook.com/
+            # cat=socials/facebook/20; type=string; label= Icon for the facebook social
+            icon = EXT:kd_base/Resources/Public/Icons/facebook.png
+            # cat=socials/facebook/30; type=boolean; label= Enable the facebook social
+            enable = 0
+        }
     }
     navigation{
         # cat=navigation//10; type=int+; label= Page uid of the Main Menu entry point

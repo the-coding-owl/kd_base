@@ -1,5 +1,5 @@
 <header id="header">
-    <f:render partial="Header" />
+    <f:render partial="Header" arguments="{_all}" />
 </header>
 <f:if condition="{0:'{layout}'} == {0:'sidebarleft'}">
     <aside id="leftContent">
@@ -15,5 +15,5 @@
     </aside>
 </f:if>
 <footer id="footer">
-    <f:render partial="Footer" />
+    <f:render partial="Footer" arguments="{_all}" />
 </footer>

@@ -3,6 +3,9 @@
 	<file source-language="en" datatype="plaintext" original="messages" date="2015-01-25T11:23:45Z" product-name="kd_base">
 		<header/>
 		<body>
+                    <trans-unit id="socials.facebook.share" xml:space="preserve">
+                        <source>Share on facebook</source>
+                    </trans-unit>
 		</body>
 	</file>
 </xliff>
