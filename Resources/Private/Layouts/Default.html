@@ -1,9 +1,19 @@
 <header id="header">
     <f:render partial="Header" />
 </header>
+<f:if condition="{0:'{layout}'} == {0:'sidebarleft'}">
+    <aside id="leftContent">
+        <f:render section="leftContent" />
+    </aside>
+</f:if>
 <main id="content">
     <f:render section="main" />
 </main>
+<f:if condition="{0:'{layout}'} == {0:'sidebarright'}">
+    <aside id="rightContent">
+        <f:render section="rightContent" />
+    </aside>
+</f:if>
 <footer id="footer">
     <f:render partial="Footer" />
 </footer>
