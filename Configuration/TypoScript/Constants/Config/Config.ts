@@ -6,6 +6,9 @@
  *
  *    Coded with Netbeans!
  */
+# customsubcategory=twitter=LLL:EXT:kd_base/Resources/Private/Language/locallang.xlf:socials.twitter.subcategory
+# customsubcategory=facebook=LLL:EXT:kd_base/Resources/Private/Language/locallang.xlf:socials.facebook.subcategory
+
 baseconfig{
     # cat=debug/enable/10; type=boolean; label= Enable debug mode
     debug = 0
@@ -95,6 +98,14 @@ baseconfig{
             # cat=socials/facebook/20; type=string; label= Icon for the facebook social
             icon = EXT:kd_base/Resources/Public/Icons/facebook.png
             # cat=socials/facebook/30; type=boolean; label= Enable the facebook social
+            enable = 0
+        }
+        twitter{
+            # cat=socials/twitter/10; type=string; label= Url to the twitter profile
+            url = https://twitter.com/
+            # cat=socials/twitter/20; type=string; label= Icon for the twitter social
+            icon = EXT:kd_base/Resources/Public/Icons/twitter.png
+            # cat=socials/twitter/30; type=boolean; label= Enable the twitter social
             enable = 0
         }
     }
