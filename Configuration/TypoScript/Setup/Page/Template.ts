@@ -23,9 +23,11 @@ page{
                     value = default
                 }
                 1 < .default
-                1.value = sidebarleft
+                1.value = default
                 2 < .default
                 2.value = sidebarright
+                3 < .default
+                3.value = sidebarleft
             }
             logo < lib.logo
             mainNavigation < lib.mainNavigation
