@@ -31,8 +31,11 @@ baseconfig{
         pageTitleFirst = 0
     }
     
+    # cat=base/enable/40; type=boolean; label= Enable simulateStaticDocuments
     simulateStaticDocuments = 0
+    # cat=base/enable/50; type=boolean; label= Enable RealUrl
     tx_realurl_enable = 1
+
     jquery{
         # cat=jquery/enable/10; type=boolean; label= Enable jQuery
         enable = 1
@@ -125,7 +128,4 @@ baseconfig{
         # cat=navigation//30; type=int+; label= Page uid of the Footer Menu entry point
         footerEntry = 
     }
-
-    #cat=base/enable/40; type=boolean; label= Enable admin panel
-    adminPanel = 
 }
