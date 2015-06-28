@@ -11,6 +11,7 @@ config{
     baseUrl = {$baseconfig.baseUrl.protocoll}{$baseconfig.baseUrl.server}/
     absRefPrefix = {$baseconfig.absRefPrefix}
     adminPanel = {$baseconfig.adminPanel}
+    debug = {$baseconfig.debug}
 }
 [globalVar = LIT:0 = {$baseconfig.baseUrl.enable}]
 config.baseUrl >

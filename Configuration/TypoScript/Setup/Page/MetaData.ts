@@ -64,6 +64,5 @@ page.meta{
                 date = r
             }
         }
-        ifEmpty
     }
 }

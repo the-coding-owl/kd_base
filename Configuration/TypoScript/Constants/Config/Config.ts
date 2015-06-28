@@ -23,6 +23,14 @@ baseconfig{
     # cat=base//30; type=string; label= Prefix to be prepended to relative links
     absRefPrefix = 
     
+    
+    pagetitle{
+        # cat=base//40; type=string; label= The seperator between site title and page title
+        seperator = -
+        # cat=base//50; type=boolean; label= Page title before site title
+        pageTitleFirst = 0
+    }
+    
     simulateStaticDocuments = 0
     tx_realurl_enable = 1
     jquery{

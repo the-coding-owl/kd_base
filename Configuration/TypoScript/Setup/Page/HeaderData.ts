@@ -6,6 +6,16 @@
  *
  *    Coded with Netbeans!
  */
+################################################################################
+# PAGETITLE ####################################################################
+################################################################################
+config{
+    pageTitleSeparator = {$baseconfig.pagetitle.separator}
+    pageTitleFirst = {$baseconfig.pagetitle.pageTitleFirst}
+}
+################################################################################
+# STYLESHEETS AND JAVASCRIPTS ##################################################
+################################################################################
 page.includeCSS{
     template = EXT:kd_base/Resources/Public/Stylesheets/template.css
 }
