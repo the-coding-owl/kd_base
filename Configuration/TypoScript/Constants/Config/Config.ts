@@ -26,7 +26,7 @@ baseconfig{
     
     pagetitle{
         # cat=base//40; type=string; label= The seperator between site title and page title
-        seperator = -
+        separator = -
         # cat=base//50; type=boolean; label= Page title before site title
         pageTitleFirst = 0
     }
