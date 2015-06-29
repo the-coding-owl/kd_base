@@ -120,6 +120,14 @@ baseconfig{
             enable = 0
         }
     }
+    copyright{
+        # cat=copyright//10; type=string; label= The author of the website
+        author = Kevin Ditscheid
+        # cat=copyright//20; type=string; label= The email of the author of the website
+        email = kevinditscheid@gmail.com
+        # cat=copyright//30; type=string; label= An extra string, appended to the copyright
+        extra = Powered by TYPO3
+    }
     navigation{
         # cat=navigation//10; type=int+; label= Page uid of the Main Menu entry point
         mainEntry = 
