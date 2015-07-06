@@ -6,7 +6,8 @@
  *
  *    Coded with Netbeans!
  */
-
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:kd_base/Configuration/TypoScript/Setup/Page/Copyright.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:kd_base/Configuration/TypoScript/Setup/Page/Template.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:kd_base/Configuration/TypoScript/Setup/Page/HeaderData.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:kd_base/Configuration/TypoScript/Setup/Page/MetaData.ts">
+

@@ -6,12 +6,5 @@
  *
  *    Coded with Netbeans!
  */
-config{
-    prefixLocalAnchors = all
-    baseUrl = {$baseconfig.baseUrl.protocoll}{$baseconfig.baseUrl.server}/
-    absRefPrefix = {$baseconfig.absRefPrefix}
-    adminPanel = {$baseconfig.adminPanel}
-}
-[globalVar = LIT:0 = {$baseconfig.baseUrl.enable}]
-config.baseUrl >
-[global]
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:kd_base/Configuration/TypoScript/Setup/Config/General.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:kd_base/Configuration/TypoScript/Setup/Config/Debug.ts">

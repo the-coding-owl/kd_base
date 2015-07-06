@@ -3,6 +3,39 @@
 	<file source-language="en" datatype="plaintext" original="messages" date="2015-01-25T11:23:45Z" product-name="kd_base">
 		<header/>
 		<body>
+            <trans-unit id="pages.robots_index" xml:space="preserve">
+                <source>Indexing</source>
+            </trans-unit>
+            <trans-unit id="pages.robots_index.index" xml:space="preserve">
+                <source>index</source>
+            </trans-unit>
+            <trans-unit id="pages.robots_index.noindex" xml:space="preserve">
+                <source>noindex</source>
+            </trans-unit>
+            <trans-unit id="pages.robots_follow" xml:space="preserve">
+                <source>Following</source>
+            </trans-unit>
+            <trans-unit id="pages.robots_follow.follow" xml:space="preserve">
+                <source>follow</source>
+            </trans-unit>
+            <trans-unit id="pages.robots_follow.nofollow" xml:space="preserve">
+                <source>nofollow</source>
+            </trans-unit>
+            <trans-unit id="pages.robots_nosnippet" xml:space="preserve">
+                <source>Nosnippet</source>
+            </trans-unit>
+            <trans-unit id="pages.robots_noodp" xml:space="preserve">
+                <source>Noodp</source>
+            </trans-unit>
+            <trans-unit id="pages.robots_noarchive" xml:space="preserve">
+                <source>Noarchive</source>
+            </trans-unit>
+            <trans-unit id="pages.robots_noimageindex" xml:space="preserve">
+                <source>Noimageindex</source>
+            </trans-unit>
+            <trans-unit id="pages.robots_unavailable_after" xml:space="preserve">
+                <source>Unavailable after</source>
+            </trans-unit>
 		</body>
 	</file>
 </xliff>
