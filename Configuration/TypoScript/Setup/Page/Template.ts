@@ -29,20 +29,12 @@ page{
                 3 < .default
                 3.value = sidebarleft
             }
-            logo < lib.logo
-            mainNavigation < lib.mainNavigation
-            subNavigation < lib.subNavigation
-            metaNavigation < lib.metaNavigation
-            footerNavigation < lib.footerNavigation 
-            socials < lib.socials 
-            languageNavigation < lib.languageNavigation 
             content < styles.content.get
             content.select.where = colPos = 1
             rightColumn < styles.content.get
             rightColumn.select.where = colPos = 2
             leftColumn < styles.content.get
             leftColumn.select.where = colPos = 3
-            copyright < lib.copyright
         }
     }
 }
