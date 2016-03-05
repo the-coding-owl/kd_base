@@ -8,7 +8,9 @@
  */
 # customsubcategory=twitter=LLL:EXT:kd_base/Resources/Private/Language/locallang.xlf:socials.twitter.subcategory
 # customsubcategory=facebook=LLL:EXT:kd_base/Resources/Private/Language/locallang.xlf:socials.facebook.subcategory
-
+# customsubcategory=german=LLL:EXT:kd_base/Resources/Private/Language/locallang.xlf:language.german.subcategory
+# customsubcategory=default=LLL:EXT:kd_base/Resources/Private/Language/locallang.xlf:language.default.subcategory
+# customsubcategory=general=LLL:EXT:kd_base/Resources/Private/Language/locallang.xlf:language.general.subcategory
 baseconfig{
     # cat=debug/enable/10; type=boolean; label= Enable debug mode
     debug = 0
@@ -74,11 +76,11 @@ baseconfig{
     }
     language{
         config{
-            # cat=language//10; type=string; label= Sys language mode
+            # cat=language/general/10; type=string; label= Sys language mode
             sys_language_mode = content_fallback
-            # cat=language//20; type=string; label= Sys language overlay
+            # cat=language/general/20; type=string; label= Sys language overlay
             sys_language_overlay = hideNonTranslated
-            # cat=language//30; type=string; label= Sys language overlay
+            # cat=language/general/30; type=string; label= meta charset
             metaCharset = utf-8
         }
         default{
@@ -88,6 +90,8 @@ baseconfig{
             language = en
             # cat=language/default/30; type=string; label= Language locale
             locale_all = en_GB
+			# cat=language/default/31; type=string; label= Language locale for HTML Tag
+			htmlTag_langKey = en-GB
             # cat=language/default/40; type=string; label= Text for the language menu
             langText = English
         }
@@ -98,6 +102,8 @@ baseconfig{
             language = de
             # cat=language/german/30; type=string; label= Language locale
             locale_all = de_DE
+			# cat=language/german/31; type=string; label= Language locale for HTML Tag
+			htmlTag_langKey = de-DE
             # cat=language/german/40; type=string; label= Text for the language menu
             langText = Deutsch
         }

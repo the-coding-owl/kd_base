@@ -3,18 +3,28 @@
 	<file source-language="en" datatype="plaintext" original="messages" date="2015-01-25T11:23:45Z" product-name="kd_base">
 		<header/>
 		<body>
-                    <trans-unit id="socials.facebook.share" xml:space="preserve">
-                        <source>Share on facebook</source>
-                    </trans-unit>
-                    <trans-unit id="socials.twitter.share" xml:space="preserve">
-                        <source>Share on twitter</source>
-                    </trans-unit>
-                    <trans-unit id="socials.facebook.subcategory" xml:space="preserve">
-                        <source>Facebook</source>
-                    </trans-unit>
-                    <trans-unit id="socials.twitter.subcategory" xml:space="preserve">
-                        <source>Twitter</source>
-                    </trans-unit>
+			<trans-unit id="socials.facebook.share" xml:space="preserve">
+				<source>Share on facebook</source>
+			</trans-unit>
+			<trans-unit id="socials.twitter.share" xml:space="preserve">
+				<source>Share on twitter</source>
+			</trans-unit>
+			<trans-unit id="socials.facebook.subcategory" xml:space="preserve">
+				<source>Facebook</source>
+			</trans-unit>
+			<trans-unit id="socials.twitter.subcategory" xml:space="preserve">
+				<source>Twitter</source>
+			</trans-unit>
+
+			<trans-unit id="language.general.subcategory" xml:space="preserve">
+				<source>General</source>
+			</trans-unit>
+			<trans-unit id="language.default.subcategory" xml:space="preserve">
+				<source>Default</source>
+			</trans-unit>
+			<trans-unit id="language.german.subcategory" xml:space="preserve">
+				<source>German</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

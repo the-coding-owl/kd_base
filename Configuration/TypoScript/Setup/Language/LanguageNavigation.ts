@@ -25,11 +25,6 @@ lib.languageNavigation {
 			doNotLinkIt = 1
 			stdWrap.typolink.parameter.data = page:uid
 			stdWrap.typolink.additionalParams = &L={$baseconfig.language.default.sys_language_uid} || &L={$baseconfig.language.de.sys_language_uid}
-			stdWrap.typolink.addQueryString = 1
-			stdWrap.typolink.addQueryString.exclude = L,id,cHash,no_cache
-			stdWrap.typolink.addQueryString.method = GET
-			stdWrap.typolink.useCacheHash = 1
-			stdWrap.typolink.no_cache = 0
 		}
 		# Aktive Sprache
 		ACT < .NO

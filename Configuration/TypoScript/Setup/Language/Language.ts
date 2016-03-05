@@ -14,14 +14,14 @@ config{
     metaCharset = {$baseconfig.language.config.metaCharset}
     sys_language_mode = {$baseconfig.language.config.sys_language_mode}
     sys_language_overlay = {$baseconfig.language.config.sys_language_overlay}
-    htmlTag_langKey = {$baseconfig.language.default.locale_all}
+    htmlTag_langKey = {$baseconfig.language.default.htmlTag_langKey}
 }
 [globalVar = GP:L={$baseconfig.language.de.sys_language_uid}]
 config{
     sys_language_uid = {$baseconfig.language.de.sys_language_uid}
     language = {$baseconfig.language.de.language}
     locale_all = {$baseconfig.language.de.locale_all}
-    htmlTag_langKey = {$baseconfig.language.de.locale_all}
+    htmlTag_langKey = {$baseconfig.language.de.htmlTag_langKey}
 }
 [global]
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:kd_base/Configuration/TypoScript/Setup/Language/LanguageNavigation.ts">

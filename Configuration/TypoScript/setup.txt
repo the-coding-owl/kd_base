@@ -1,0 +1,9 @@
+/*
+ *    Project:	kd_base - kd_base
+ *    Version:	1.0.0
+ *    Date:		28.01.2016 20:33:51
+ *    Author:	Kevin Ditscheid <ditscheid@engine-productions.de> 
+ *
+ *    Coded with Netbeans!
+ */
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:kd_base/Configuration/TypoScript/Setup/Setup.ts">
