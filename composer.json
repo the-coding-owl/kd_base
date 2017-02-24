@@ -1,0 +1,44 @@
+{
+    "name": "the-coding-owl/kd-base",
+    "description": "A base distribution that provides a basic configuration for TYPO3 CMS",
+    "type": "typo3-cms-extension",
+    "require": {
+        "typo3/cms-core": "^7.6 || 8.6",
+		"typo3/cms-backend": "^7.6 || 8.6",
+		"typo3/cms-filelist": "^7.6 || 8.6",
+		"typo3/cms-frontend": "^7.6 || 8.6",
+		"typo3/cms-lang": "^7.6 || 8.6",
+		"typo3/cms-fluid": "^7.6 || 8.6",
+		"typo3/cms-fluid-styled-content": "^7.6 || 8.6",
+		"typo3/cms-belog": "^7.6 || 8.6",
+		"typo3/cms-beuser": "^7.6 || 8.6",
+		"typo3/cms-extbase": "^7.6 || 8.6",
+		"typo3/cms-extensionmanager": "^7.6 || 8.6",
+		"typo3/cms-info": "^7.6 || 8.6",
+		"typo3/cms-info-pagetsconfig": "^7.6 || 8.6",
+		"typo3/cms-install": "^7.6 || 8.6",
+		"typo3/cms-linkvalidator": "^7.6 || 8.6",
+		"typo3/cms-lowlevel": "^7.6 || 8.6",
+		"typo3/cms-rsaauth": "^7.6 || 8.6",
+		"typo3/cms-recordlist": "^7.6 || 8.6",
+		"typo3/cms-func": "^7.6 || 8.6",
+		"typo3/cms-reports": "^7.6 || 8.6",
+		"typo3/cms-form": "^7.6 || 8.6",
+		"typo3/cms-setup": "^7.6 || 8.6",
+		"typo3/cms-sys-action": "^7.6 || 8.6",
+		"typo3/cms-taskcenter": "^7.6 || 8.6",
+		"typo3/cms-tstemplate": "^7.6 || 8.6",
+		"typo3/cms-viewpage": "^7.6 || 8.6"
+    },
+    "license": "GPLv2",
+    "authors": [
+        {
+            "name": "Kevin Ditscheid",
+            "email": "kevinditscheid@gmail.com"
+        }
+    ],
+	"replace": {
+		"kd_base": "self.version",
+		"typo3-ter/kd-base": "self.version"
+	}
+}
