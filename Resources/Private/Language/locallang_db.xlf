@@ -3,6 +3,24 @@
 	<file source-language="en" datatype="plaintext" original="messages" date="2015-01-25T11:23:45Z" product-name="kd_base">
 		<header/>
 		<body>
+            <!-- pages -->
+            <trans-unit id="pages.backend_layout.default_layout" xml:space="preserve">
+                <source>Default</source>
+            </trans-unit>
+            <trans-unit id="pages.backend_layout.Site" xml:space="preserve">
+                <source>Site</source>
+            </trans-unit>
+            <trans-unit id="pages.backend_layout.Site.row.head" xml:space="preserve">
+                <source>Header</source>
+            </trans-unit>
+            <trans-unit id="pages.backend_layout.Site.row.content" xml:space="preserve">
+                <source>Content</source>
+            </trans-unit>
+            <trans-unit id="pages.backend_layout.Site.row.foot" xml:space="preserve">
+                <source>Footer</source>
+            </trans-unit>
+            
+            <!-- Robots -->
             <trans-unit id="pages.robots_index" xml:space="preserve">
                 <source>Indexing</source>
             </trans-unit>

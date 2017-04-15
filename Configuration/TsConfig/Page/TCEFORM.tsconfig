@@ -6,3 +6,15 @@
  *
  *    Coded with Netbeans!
  */
+
+TCEFORM{
+    pages{
+        backend_layout{
+            removeItems= -1
+            altLabels.0 = LLL:EXT:kd_base/Resources/Private/Language/locallang_db.xlf:pages.backend_layout.default_layout
+        }
+        backend_layout_next_level{
+            removeItems= -1
+        }
+    }
+}
