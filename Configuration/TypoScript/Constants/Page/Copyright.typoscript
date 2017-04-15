@@ -1,0 +1,17 @@
+/*
+ *    Project:	kd_base
+ *    Version:	2.0.0
+ *    Date:		15.04.2017
+ *    Author:	Kevin Ditscheid <kevinditscheid@gmail.com>
+ *
+ *    Coded with Netbeans!
+ */
+
+config.copyright{
+    # cat=copyright//10; type=string; label= The author of the website
+    author = Kevin Ditscheid
+    # cat=copyright//20; type=string; label= The email of the author of the website
+    email = kevinditscheid@gmail.com
+    # cat=copyright//30; type=string; label= An extra string, appended to the copyright
+    extra = Powered by TYPO3
+}

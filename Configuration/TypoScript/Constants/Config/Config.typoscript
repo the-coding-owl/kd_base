@@ -6,4 +6,8 @@
  *
  *    Coded with Netbeans!
  */
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:kd_base/Configuration/TypoScript/Setup/Setup.typoscript">
+
+config{
+    # cat=base//10; type=string; label= Prefix to be prepended to relative links
+    absRefPrefix = /
+}

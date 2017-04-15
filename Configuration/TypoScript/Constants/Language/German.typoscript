@@ -1,0 +1,24 @@
+/*
+ *    Project:	kd_base
+ *    Version:	2.0.0
+ *    Date:		15.04.2017
+ *    Author:	Kevin Ditscheid <kevinditscheid@gmail.com>
+ *
+ *    Coded with Netbeans!
+ */
+# customsubcategory=german=LLL:EXT:kd_base/Resources/Private/Language/locallang.xlf:language.german.subcategory
+
+config.language{
+    de{
+        # cat=language/german/10; type=int+; label= Sys language uid
+        sys_language_uid = 1
+        # cat=language/german/20; type=string; label= Language
+        language = de
+        # cat=language/german/30; type=string; label= Language locale
+        locale_all = de_DE
+        # cat=language/german/31; type=string; label= Language locale for HTML Tag
+        htmlTag_langKey = de-DE
+        # cat=language/german/40; type=string; label= Text for the language menu
+        langText = Deutsch
+    }
+}

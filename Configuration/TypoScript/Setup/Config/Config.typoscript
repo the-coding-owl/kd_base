@@ -1,0 +1,23 @@
+/*
+ *    Project:	kd_base
+ *    Version:	2.0.0
+ *    Date:		15.04.2017
+ *    Author:	Kevin Ditscheid <kevinditscheid@gmail.com>
+ *
+ *    Coded with Netbeans!
+ */
+
+config{
+    absRefPrefix = {$config.absRefPrefix}
+    prefixLocalAnchors = all
+    
+    spamProtectEmailAddresses = ascii
+    spamProtectEmailAddresses_atSubst = (at)
+    spamProtectEmailAddresses_lastDotSubst = .
+}
+[globalVar = LIT:1 = {$config.debug.disableContentObjectExteptionHandler}] || [globalVar = LIT:1 = {$config.debug.debugAll}]
+config.contentObjectExceptionHandler = 0
+[global]
+[globalVar = LIT:1 = {$config.debug.admPanelEnable}] || [globalVar = LIT:1 = {$config.debug.debugAll}]
+config.admPanel = 1
+[global]

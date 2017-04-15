@@ -1,0 +1,63 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+	<f:section name="main">
+		<f:if condition="{menu}">
+			<nav class="page-navigation-main">
+				<ul>
+					<f:for each="{menu}" as="page">
+						<li>
+							<a href="{page.link}" target="{page.target}" title="{page.title}">
+								<span>{page.title}</span>
+							</a>
+						</li>
+					</f:for>
+				</ul>
+			</nav>
+		</f:if>
+	</f:section>
+
+    <f:section name="language">
+        <nav class="page-navigation-language">
+            <ul>
+                <f:for each="{languageNavigation}" as="language">
+                    <li>
+                        <a href="{language.link}" target="{language.target}" title="{language.title}">
+                            <span>{language.title}</span>
+                        </a>
+                    </li>
+                </f:for>
+            </ul>
+        </nav>
+    </f:section>
+    
+    <f:section name="meta">
+        <f:if condition="{menu}">
+            <nav class="page-navigation-meta">
+                <ul>
+					<f:for each="{menu}" as="page">
+						<li>
+							<a href="{page.link}" target="{page.target}" title="{page.title}">
+								<span>{page.title}</span>
+							</a>
+						</li>
+					</f:for>
+				</ul>
+            </nav>
+        </f:if>
+    </f:section>
+    
+	<f:section name="footer">
+		<f:if condition="{menu}">
+			<nav class="page-navigation-footer">
+				<ul>
+					<f:for each="{menu}" as="page">
+						<li>
+							<a href="{page.link}" target="{page.target}" title="{page.title}">
+								<span>{page.title}</span>
+							</a>
+						</li>
+					</f:for>
+				</ul>
+			</nav>
+		</f:if>
+	</f:section>
+</html>

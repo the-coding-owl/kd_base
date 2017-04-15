@@ -1,0 +1,19 @@
+/*
+ *    Project:	kd_base
+ *    Version:	2.0.0
+ *    Date:		15.04.2017
+ *    Author:	Kevin Ditscheid <kevinditscheid@gmail.com>
+ *
+ *    Coded with Netbeans!
+ */
+TCEFORM.pages{
+    backend_layout{
+        PAGE_TSCONFIG_ID=29
+        removeItems= -1
+        altLabels.0 = LLL:EXT:kd_base/Resources/Private/Language/locallang.xlf:pages.backend_layout.default_layout
+    }
+    backend_layout_next_level{
+        PAGE_TSCONFIG_ID=29
+        removeItems= -1
+    }
+}

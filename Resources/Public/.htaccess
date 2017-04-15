@@ -1,0 +1,9 @@
+# Apache < 2.3
+<IfModule !mod_authz_core.c>
+	Order allow,deny
+	Allow from All
+</IfModule>
+# Apache >= 2.3
+<IfModule mod_authz_core.c>
+	Require all granted
+</IfModule>

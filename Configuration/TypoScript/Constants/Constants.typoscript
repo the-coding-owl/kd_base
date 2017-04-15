@@ -1,0 +1,14 @@
+/*
+ *    Project:	kd_base
+ *    Version:	2.0.0
+ *    Date:		15.04.2017
+ *    Author:	Kevin Ditscheid <kevinditscheid@gmail.com>
+ *
+ *    Coded with Netbeans!
+ */
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:kd_base/Configuration/TypoScript/Constants/Config/" extension="typoscript">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:kd_base/Configuration/TypoScript/Constants/Extensions/" extension="typoscript">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:kd_base/Configuration/TypoScript/Constants/Language/" extension="typoscript">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:kd_base/Configuration/TypoScript/Constants/Navigation/" extension="typoscript">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:kd_base/Configuration/TypoScript/Constants/Page/" extension="typoscript">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:kd_base/Configuration/TypoScript/Constants/Socials/" extension="typoscript">

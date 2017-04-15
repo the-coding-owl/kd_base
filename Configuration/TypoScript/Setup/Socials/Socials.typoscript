@@ -1,0 +1,20 @@
+/*
+ *    Project:	kd_base
+ *    Version:	2.0.0
+ *    Date:		15.04.2017
+ *    Author:	Kevin Ditscheid <kevinditscheid@gmail.com>
+ *
+ *    Coded with Netbeans!
+ */
+lib.siteSettings.socials{
+    facebook{
+        enable = {$config.socials.facebook.enable}
+        url = {$config.socials.facebook.url}
+        icon = {$config.socials.facebook.icon}
+    }
+    twitter{
+        enable = {$config.socials.twitter.enable}
+        url = {$config.socials.twitter.url}
+        icon = {$config.socials.twitter.icon}
+    }
+}

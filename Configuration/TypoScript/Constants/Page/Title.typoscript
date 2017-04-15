@@ -1,0 +1,15 @@
+/*
+ *    Project:	kd_base
+ *    Version:	2.0.0
+ *    Date:		15.04.2017
+ *    Author:	Kevin Ditscheid <kevinditscheid@gmail.com>
+ *
+ *    Coded with Netbeans!
+ */
+
+config.pagetitle{
+    # cat=pagetitle//10; type=string; label= The seperator between site title and page title
+    separator = -
+    # cat=pagetitle//20; type=boolean; label= Page title before site title
+    pageTitleFirst = 0
+}

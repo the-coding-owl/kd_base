@@ -1,0 +1,74 @@
+/*
+ *    Project:	kd_base
+ *    Version:	2.0.0
+ *    Date:		15.04.2017
+ *    Author:	Kevin Ditscheid <kevinditscheid@gmail.com>
+ *
+ *    Coded with Netbeans!
+ */
+
+[globalVar = LIT:1 = {$config.bootstrap.enable} && globalVar = LIT:0 = {$config.bootstrap.local}]
+page.includeJSFooterlibs{
+    bootstrap = {$config.bootstrap.js.cdnUrl}
+    bootstrap.external = 1
+}
+[global]
+[globalVar = LIT:1 = {$config.bootstrap.enable}] && [globalVar = LIT:1 = {$config.bootstrap.cdn}] && [globalVar = LIT:0 = {$config.bootstrap.local}]
+page.includeJSFooterlibs{
+    bootstrap.ifEmpty = //maxcdn.bootstrapcdn.com/bootstrap/{$config.bootstrap.version}/js/bootstrap.min.js
+    bootstrap.external = 1
+}
+[global]
+[globalVar = LIT:1 = {$config.bootstrap.enable}] && [globalVar = LIT:1 = {$config.bootstrap.local}]
+page.includeJSFooterlibs{
+    bootstrap = {$config.bootstrap.localPath}/bootstrap-{$config.bootstrap.version}.min.js
+    bootstrap.external = 0
+    bootstrap.ifEmpty = EXT:kd_base/Resources/Public/JavaScript/Bootstrap/bootstrap-{$config.bootstrap.version}.min.js
+}  
+[global]
+page.includeJS{
+    template = EXT:kd_base/Resources/Public/JavaScript/template.js
+}
+[globalVar = LIT:1 = {$config.jquery.enable}] && [globalVar = LIT:0 = {$config.jquery.local}]
+page.includeJSFooterlibs{
+    jQuery = {$config.jquery.cdnUrl}
+    jQuery.external = 1
+}
+[global]
+[globalVar = LIT:1 = {$config.jquery.enable}] && [globalVar = LIT:1 = {$config.jquery.cdn}] && [globalVar = LIT:0 = {$config.jquery.local}]
+page.includeJSFooterlibs{
+    jQuery.ifEmpty = //code.jquery.com/jquery-{$config.jquery.version}.min.js
+    jQuery.external = 1
+}
+[global]
+[globalVar = LIT:1 = {$config.jquery.enable}] && [globalVar = LIT:2 = {$config.jquery.cdn}] && [globalVar = LIT:0 = {$config.jquery.local}]
+page.includeJSFooterlibs{
+    jQuery.ifEmpty = //ajax.googleapis.com/ajax/libs/jquery/{$config.jquery.version}/jquery.min.js
+    jQuery.external = 1
+}
+[global]
+[globalVar = LIT:1 = {$config.jquery.enable}] && [globalVar = LIT:3 = {$config.jquery.cdn}] && [globalVar = LIT:0 = {$config.jquery.local}]
+page.includeJSFooterlibs{
+    jQuery.ifEmpty = //ajax.aspnetcdn.com/ajax/jQuery/jquery-{$config.jquery.version}.min.js
+    jQuery.external = 1
+}
+[global]
+[globalVar = LIT:1 = {$config.jquery.enable}] && [globalVar = LIT:4 = {$config.jquery.cdn}] && [globalVar = LIT:0 = {$config.jquery.local}]
+page.includeJSFooterLibs{
+    jQuery.ifEmpty = //cdnjs.cloudflare.com/ajax/libs/jquery/{$config.jquery.version}/jquery.min.js
+    jQuery.external = 1
+}
+[global]
+[globalVar = LIT:1 = {$config.jquery.enable}] && [globalVar = LIT:5 = {$config.jquery.cdn}] && [globalVar = LIT:0 = {$config.jquery.local}]
+page.includeJSFooterlibs{
+    jQuery.ifEmpty = //cdn.jsdelivr.net/jquery/{$config.jquery.version}/jquery.min.js
+    jQuery.external = 1
+}
+[global]
+[globalVar = LIT:1 = {$config.jquery.enable}] && [globalVar = LIT:1 = {$config.jquery.local}]
+page.includeJSFooterlibs{
+    jQuery = {$config.jquery.localPath}/jquery-{$config.jquery.version}.min.js
+    jQuery.external = 0
+    jQuery.ifEmpty = EXT:kd_base/Resources/Public/JavaScript/jQuery/jquery-{$config.jquery.version}.min.js
+}   
+[global]

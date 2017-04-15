@@ -6,4 +6,9 @@
  *
  *    Coded with Netbeans!
  */
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:kd_base/Configuration/TypoScript/Setup/Setup.typoscript">
+
+lib.siteSettings.copyright{
+    author = {$config.copyright.author}
+    email = {$config.copyright.email}
+    extra = {$config.copyright.extra}
+}

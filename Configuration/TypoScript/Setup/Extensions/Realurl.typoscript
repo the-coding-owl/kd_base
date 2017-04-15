@@ -1,0 +1,4 @@
+config.tx_realurl_enable = 1
+[globalVar = LIT:1 = {$config.debug.disableRealurl}] || [globalVar = LIT:1 = {$config.debug.debugAll}]
+config.tx_realurl_enable = 0
+[global]

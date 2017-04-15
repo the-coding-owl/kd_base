@@ -1,0 +1,20 @@
+/*
+ *    Project:	kd_base
+ *    Version:	2.0.0
+ *    Date:		15.04.2017
+ *    Author:	Kevin Ditscheid <kevinditscheid@gmail.com>
+ *
+ *    Coded with Netbeans!
+ */
+# customsubcategory=general=LLL:EXT:kd_base/Resources/Private/Language/locallang.xlf:language.general.subcategory
+
+config.language{
+	config{
+		# cat=language/general/10; type=string; label= Sys language mode
+		sys_language_mode = content_fallback
+		# cat=language/general/20; type=string; label= Sys language overlay
+		sys_language_overlay = hideNonTranslated
+		# cat=language/general/30; type=string; label= meta charset
+		metaCharset = utf-8
+	}
+}

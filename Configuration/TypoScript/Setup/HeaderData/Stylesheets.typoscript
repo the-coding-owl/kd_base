@@ -1,0 +1,41 @@
+/*
+ *    Project:	kd_base
+ *    Version:	2.0.0
+ *    Date:		15.04.2017
+ *    Author:	Kevin Ditscheid <kevinditscheid@gmail.com>
+ *
+ *    Coded with Netbeans!
+ */
+
+page.includeCSS{
+    template = EXT:kd_base/Resources/Public/Stylesheets/template.css
+}
+page.includeCSSLibs{
+    
+}
+[globalVar = LIT:1 = {$config.bootstrap.enable} && globalVar = LIT:0 = {$config.bootstrap.local}]
+page.includeCSSLibs{
+    bootstrap = {$config.bootstrap.cdnUrl}
+    bootstrap.external = 1
+    bootstrap-theme = {$config.bootstrap.theme.cdnUrl}
+    bootstrap-theme.external = 1
+}
+[global]
+[globalVar = LIT:1 = {$config.bootstrap.enable}] && [globalVar = LIT:1 = {$config.bootstrap.cdn}] && [globalVar = LIT:0 = {$config.bootstrap.local}]
+page.includeCSSLibs{
+    bootstrap.ifEmpty = //maxcdn.bootstrapcdn.com/bootstrap/{$config.bootstrap.version}/css/bootstrap.min.css
+    bootstrap.external = 1
+    bootstrap-theme.ifEmpty = //maxcdn.bootstrapcdn.com/bootstrap/{$config.bootstrap.version}/css/bootstrap-theme.min.css
+    bootstrap-theme.external = 1
+}
+[global]
+[globalVar = LIT:1 = {$config.bootstrap.enable}] && [globalVar = LIT:1 = {$config.bootstrap.local}]
+page.includeCSSLibs{
+    bootstrap = {$config.bootstrap.localPath}/bootstrap-{$config.bootstrap.version}.min.css
+    bootstrap.external = 0
+    bootstrap.ifEmpty = EXT:kd_base/Resources/Public/Stylesheets/Bootstrap/bootstrap-{$config.bootstrap.version}.min.css
+    bootstrap-theme = {$config.bootstrap.localPath}/bootstrap-{$config.bootstrap.version}-theme.min.css
+    bootstrap-theme.external = 0
+    bootstrap-theme.ifEmpty = EXT:kd_base/Resources/Public/Stylesheets/Bootstrap/bootstrap-{$config.bootstrap.version}-theme.min.css
+}
+[global]

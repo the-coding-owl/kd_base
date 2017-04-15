@@ -1,0 +1,58 @@
+/*
+ *    Project:	kd_base
+ *    Version:	2.0.0
+ *    Date:		15.04.2017
+ *    Author:	Kevin Ditscheid <kevinditscheid@gmail.com>
+ *
+ *    Coded with Netbeans!
+ */
+
+page = PAGE
+page{
+    10 = FLUIDTEMPLATE
+    10{
+        templateRootPaths{
+			10 = {$config.view.templateRootPath}
+		}
+		partialRootPaths{
+			10 = {$config.view.partialRootPath}
+		}
+		layoutRootPaths{
+			10 = {$config.view.layoutRootPath}
+		}
+		format = html
+		templateName.stdWrap{
+			cObject = TEXT
+			cObject{
+				value.data = levelfield:-2, backend_layout_next_level, slide
+				value.override.field = backend_layout
+				replacement{
+					10{
+						search = pagets__
+						replace =
+					}
+				}
+			}
+			ifEmpty = Default
+		}
+		variables{
+			head =< styles.content.get
+			head.select.where = colPos=0
+			content =< styles.content.get
+			content.select.where = colPos=1
+			foot =< styles.content.get
+			foot.select.where = colPos=2
+			pagetitle = TEXT
+			pagetitle.value < sitetitle
+			copyright = CONTENT
+			copyright{
+				table = tt_content
+				select{
+					uidInList = {$config.copyright.contentElementUid}
+					pidInList = {$config.generalRecordStorage}
+				}
+			}
+		}
+		settings < lib.siteSettings
+    }
+}

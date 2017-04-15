@@ -1,0 +1,15 @@
+/*
+ *    Project:	kd_base
+ *    Version:	2.0.0
+ *    Date:		15.04.2017
+ *    Author:	Kevin Ditscheid <kevinditscheid@gmail.com>
+ *
+ *    Coded with Netbeans!
+ */
+
+config{
+    sys_language_uid = {$config.language.default.sys_language_uid}
+    language = {$config.language.default.language}
+    locale_all = {$config.language.default.locale_all}
+    htmlTag_langKey = {$config.language.default.htmlTag_langKey}
+}

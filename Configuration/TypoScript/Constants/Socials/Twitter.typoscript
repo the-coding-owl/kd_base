@@ -1,0 +1,20 @@
+/*
+ *    Project:	kd_base
+ *    Version:	2.0.0
+ *    Date:		15.04.2017
+ *    Author:	Kevin Ditscheid <kevinditscheid@gmail.com>
+ *
+ *    Coded with Netbeans!
+ */
+# customsubcategory=twitter=LLL:EXT:kd_base/Resources/Private/Language/locallang.xlf:socials.twitter.subcategory
+
+config.socials{
+    twitter{
+        # cat=socials/twitter/10; type=string; label= Url to the twitter profile
+        url = https://twitter.com/
+        # cat=socials/twitter/20; type=string; label= Icon for the twitter social
+        icon = EXT:kd_base/Resources/Public/Icons/twitter.png
+        # cat=socials/twitter/30; type=boolean; label= Enable the twitter social
+        enable = 0
+    }
+}

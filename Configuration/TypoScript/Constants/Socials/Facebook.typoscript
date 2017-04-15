@@ -1,0 +1,20 @@
+/*
+ *    Project:	kd_base
+ *    Version:	2.0.0
+ *    Date:		15.04.2017
+ *    Author:	Kevin Ditscheid <kevinditscheid@gmail.com>
+ *
+ *    Coded with Netbeans!
+ */
+# customsubcategory=facebook=LLL:EXT:kd_base/Resources/Private/Language/locallang.xlf:socials.facebook.subcategory
+
+config.socials{
+    facebook{
+        # cat=socials/facebook/10; type=string; label= Url to the facebook profile
+        url = https://facebook.com/
+        # cat=socials/facebook/20; type=string; label= Icon for the facebook social
+        icon = EXT:kd_base/Resources/Public/Icons/facebook.png
+        # cat=socials/facebook/30; type=boolean; label= Enable the facebook social
+        enable = 0
+    }
+}

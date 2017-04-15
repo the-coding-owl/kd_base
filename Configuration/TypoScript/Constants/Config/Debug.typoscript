@@ -1,0 +1,21 @@
+/*
+ *    Project:	kd_base
+ *    Version:	2.0.0
+ *    Date:		15.04.2017
+ *    Author:	Kevin Ditscheid <kevinditscheid@gmail.com>
+ *
+ *    Coded with Netbeans!
+ */
+
+config.debug{
+    # cat=debug/enable/1; type=boolean; label=Enable debug mode
+    debugAll = 0
+    # cat=debug/enable/10; type=boolean; label=Disable the content object exception handler
+    disableContentObjectExteptionHandler = 0
+    # cat=debug/enable/20; type=boolean; label=Disable realurl
+    disableRealurl = 0
+    # cat=debug/enable/30; type=boolean; label=Enable the admin panel
+    admPanelEnable = 0
+    # cat=debug/enable/40; type=boolean; label=Disable the compression of JavaScript and CSS
+    disableCompression = 0
+}

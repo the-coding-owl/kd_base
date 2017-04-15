@@ -1,0 +1,17 @@
+/*
+ *    Project:	kd_base
+ *    Version:	2.0.0
+ *    Date:		15.04.2017
+ *    Author:	Kevin Ditscheid <kevinditscheid@gmail.com>
+ *
+ *    Coded with Netbeans!
+ */
+
+config.logo{
+    # cat=logo//10; type=string; label=The path to the logo
+    path = EXT:kd_base/Resources/Public/Images/logo.svg
+    # cat=logo//20; type=string; label=The title of the logo
+    title = The website logo
+    # cat=logo//30; type=string; label=The link wrapped around the logo
+    link = /
+}

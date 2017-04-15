@@ -1,0 +1,14 @@
+/*
+ *    Project:	kd_base
+ *    Version:	2.0.0
+ *    Date:		15.04.2017
+ *    Author:	Kevin Ditscheid <kevinditscheid@gmail.com>
+ *
+ *    Coded with Netbeans!
+ */
+
+styles.templates {
+    templateRootPath = EXT:kd_base/Resources/Private/Extensions/FluidStyledContent/Templates/
+    partialRootPath = EXT:kd_base/Resources/Private/Extensions/FluidStyledContent/Partials/
+    layoutRootPath = EXT:kd_base/Resources/Private/Extensions/FluidStyledContent/Layouts/
+}

@@ -1,9 +1,9 @@
 /*
- *    Project:	kd_base - kd_base
- *    Version:	1.0.0
- *    Date:		28.01.2016 20:33:45
- *    Author:	Kevin Ditscheid <ditscheid@engine-productions.de> 
+ *    Project:	kd_base
+ *    Version:	2.0.0
+ *    Date:		15.04.2017
+ *    Author:	Kevin Ditscheid <kevinditscheid@gmail.com>
  *
  *    Coded with Netbeans!
  */
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:kd_base/Configuration/TypoScript/Constants/Constants.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:kd_base/Configuration/TypoScript/Constants/Constants.typoscript">

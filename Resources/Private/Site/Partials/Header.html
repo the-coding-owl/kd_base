@@ -1,0 +1,19 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+	<f:section name="main">
+		<f:link.page class="page-home" pageUid="{settings.startpage}">
+			<f:render partial="Header" section="logo" />
+			<h1 class="page-title">
+				{pagetitle}
+			</h1>
+		</f:link.page>
+		<f:render partial="Navigation" section="main" arguments="{menu: mainNavigation}" />
+        <f:render partial="Navigation" section="meta" arguments="{menu: metaNavigation}" />
+        <f:render partial="Navigation" section="language" arguments="{languageNavigation: languageNavigation}" />
+		{head -> f:format.raw()}
+	</f:section>
+	<f:section name="logo">
+        <f:link.typolink parameter="{settings.logo.link}">
+            <f:image class="page-logo" src="{settings.logo.path}" alt="{settings.logo.title}" />
+        </f:link.typolink>
+	</f:section>
+</html>

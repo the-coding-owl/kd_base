@@ -1,0 +1,17 @@
+/*
+ *    Project:	kd_base
+ *    Version:	2.0.0
+ *    Date:		15.04.2017
+ *    Author:	Kevin Ditscheid <kevinditscheid@gmail.com>
+ *
+ *    Coded with Netbeans!
+ */
+
+[globalVar = GP:L={$config.language.de.sys_language_uid}]
+config{
+    sys_language_uid = {$config.language.de.sys_language_uid}
+    language = {$config.language.de.language}
+    locale_all = {$config.language.de.locale_all}
+    htmlTag_langKey = {$config.language.de.htmlTag_langKey}
+}
+[global]

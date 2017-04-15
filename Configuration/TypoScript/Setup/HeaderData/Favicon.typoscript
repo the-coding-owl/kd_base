@@ -1,0 +1,50 @@
+/*
+ *    Project:	kd_base
+ *    Version:	2.0.0
+ *    Date:		15.04.2017
+ *    Author:	Kevin Ditscheid <kevinditscheid@gmail.com>
+ *
+ *    Coded with Netbeans!
+ */
+
+page.headerData{
+	# Favicon
+	10 = COA
+	10{
+		10 = TEXT
+		10{
+			value.data = path:{$config.favicon.path}apple-touch-icon.png
+			wrap = <link rel="apple-touch-icon" sizes="180x180" href="|">
+		}
+		20 = TEXT
+		20{
+			value.data = path:{$config.favicon.path}favicon-32x32.png
+			wrap = <link rel="icon" type="image/png" href="|" sizes="32x32">
+		}
+		30 = TEXT
+		30{
+			value.data = path:{$config.favicon.path}favicon-16x16.png
+			wrap = <link rel="icon" type="image/png" href="|" sizes="16x16">
+		}
+		40 = TEXT
+		40{
+			value.data = path:{$config.favicon.path}manifest.json
+			wrap = <link rel="manifest" href="|">
+		}
+		50 = TEXT
+		50{
+			value.data = path:{$config.favicon.path}safari-pinned-tab.svg
+			wrap = <link rel="mask-icon" href="|" color="#5bbad5">
+		}
+		60 = TEXT
+		60{
+			value.data = path:{$config.favicon.path}favicon.ico
+			wrap = <link rel="shortcut icon" href="|">
+		}
+	}
+}
+page.shortcutIcon = path:{$config.favicon.path}favicon.ico
+page.meta{
+	msapplication-config.data = path:{$config.favicon.path}browserconfig.xml
+	theme-color = #ffffff
+}

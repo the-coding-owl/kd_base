@@ -1,0 +1,18 @@
+/*
+ *    Project:	kd_base
+ *    Version:	2.0.0
+ *    Date:		15.04.2017
+ *    Author:	Kevin Ditscheid <kevinditscheid@gmail.com>
+ *
+ *    Coded with Netbeans!
+ */
+
+page.10.dataProcessing{
+    1 < temp.navigation
+    1{
+        special.value = {$config.navigation.main.entry}
+        as = mainNavigation
+        levels = {$config.navigation.main.levels}
+        excludeUidList = {$config.navigation.main.excludeUidList}
+    }
+}
