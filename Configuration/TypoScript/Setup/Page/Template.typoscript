@@ -33,14 +33,14 @@ page{
 					}
 				}
 			}
-			ifEmpty = Default
+			ifEmpty = Site
 		}
 		variables{
-			head =< styles.content.get
+			head < styles.content.get
 			head.select.where = colPos=0
-			content =< styles.content.get
+			content < styles.content.get
 			content.select.where = colPos=1
-			foot =< styles.content.get
+			foot < styles.content.get
 			foot.select.where = colPos=2
 			pagetitle = TEXT
 			pagetitle.value < sitetitle
