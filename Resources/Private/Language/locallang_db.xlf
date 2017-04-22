@@ -19,6 +19,9 @@
             <trans-unit id="pages.backend_layout.Site.row.foot" xml:space="preserve">
                 <source>Footer</source>
             </trans-unit>
+            <trans-unit id="pages.module.menu" xml:space="preserve">
+                <source>Menu</source>
+            </trans-unit>
             
             <!-- Robots -->
             <trans-unit id="pages.robots_index" xml:space="preserve">

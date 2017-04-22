@@ -86,3 +86,10 @@ if (!defined('TYPO3_MODE')) {
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile('kd_base', 'Configuration/TsConfig/Page/TCEFORM.tsconfig', 'TCEFORM configuration');
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addUserTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:kd_base/Configuration/TsConfig/User/Admin.ts">');
+
+$GLOBALS['TCA']['pages']['columns']['module']['config']['items'][] = array(
+	'LLL:EXT:kd_base/Resources/Private/Language/locallang_db.xlf:pages.module.menu',
+	'menu',
+	'actions-menu'
+);
+$GLOBALS['TCA']['pages']['ctrl']['typeicon_classes']['contains-menu'] = 'actions-menu';
