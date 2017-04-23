@@ -7,11 +7,12 @@
 	</f:section>
 
 	<f:section name="header">
-		<f:render partial="Header" section="logo" />
+		<f:render partial="Header" section="main" arguments="{_all}" />
 		{head -> f:format.raw()}
 	</f:section>
 
 	<f:section name="footer">
+        <f:render partial="Footer" section="main" arguments="{_all}" />
 		{foot -> f:format.raw()}
 	</f:section>
 </html>

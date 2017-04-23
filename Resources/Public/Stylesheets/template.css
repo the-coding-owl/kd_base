@@ -1,1 +1,43 @@
+html,
+body{
+    font-family: "Ubuntu";
+}
+/* GENERAL NAVIGATION */
+.navigation{
+    list-style: none;
+    padding-left: 0;
+}
+.navigation > .item{
+    display: inline-block;
+    padding: 5px 10px;
+}
+.navigation > .item + .item{
+    border-left: 1px solid #666;
+}
+.navigation > .item > a{
+    color: #666;
+    text-decoration: none;
+    padding: 2px;
+}
+.navigation > .current > a,
+.navigation > .item > a:hover,
+.navigation > .item > a:focus{
+    box-shadow: 2px 2px 3px 2px #666;
+}
+.navigation > .active > a{
+    background: #666;
+    box-shadow: 0 0 3px 5px #fff;
+    color: #fff;
+}
 
+/* HEADER */
+.page-home{
+    display: inline-block;
+    vertical-align: bottom;
+}
+.page-navigation-main{
+    display: inline-block;
+}
+.page-navigation-meta{
+    
+}

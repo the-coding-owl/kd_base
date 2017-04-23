@@ -12,16 +12,35 @@ page.10.dataProcessing{
     4{
         special = language
         special{
-            value.cObject = RECORDS
+            value.cObject = CONTENT
             value.cObject{
-                tables = sys_language
-                conf.sys_language = TEXT
-                conf.sys_language{
+                table = sys_language
+                select{
+                    pidInList = root
+                    orderBy = uid
+                }
+                renderObj = TEXT
+                renderObj{
                     value.field = uid
                     wrap = |,
+                }
+                stdWrap{
+                    substring = 0,-1
                 }
             }
         }
         as = languageNavigation
+        dataProcessing {
+            10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+            10 {
+                references.fieldName = media
+            }
+            20 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+            20{
+                table = sys_language
+                pidInList = root
+                as = sysLanguages
+            }
+        }
     }
 }

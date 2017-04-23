@@ -23,12 +23,13 @@ page.includeJSFooterlibs{
 page.includeJSFooterlibs{
     bootstrap = {$config.bootstrap.localPath}/bootstrap-{$config.bootstrap.version}.min.js
     bootstrap.external = 0
-    bootstrap.ifEmpty = EXT:kd_base/Resources/Public/JavaScript/Bootstrap/bootstrap-{$config.bootstrap.version}.min.js
 }  
 [global]
+[globalVar = LIT:1 = {$config.javascript.include}]
 page.includeJS{
     template = EXT:kd_base/Resources/Public/JavaScript/template.js
 }
+[global]
 [globalVar = LIT:1 = {$config.jquery.enable}] && [globalVar = LIT:0 = {$config.jquery.local}]
 page.includeJSFooterlibs{
     jQuery = {$config.jquery.cdnUrl}
@@ -69,6 +70,5 @@ page.includeJSFooterlibs{
 page.includeJSFooterlibs{
     jQuery = {$config.jquery.localPath}/jquery-{$config.jquery.version}.min.js
     jQuery.external = 0
-    jQuery.ifEmpty = EXT:kd_base/Resources/Public/JavaScript/jQuery/jquery-{$config.jquery.version}.min.js
 }   
 [global]

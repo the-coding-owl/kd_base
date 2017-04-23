@@ -1,0 +1,24 @@
+/*
+ *    Project:	kd_base
+ *    Version:	2.0.0
+ *    Date:		15.04.2017
+ *    Author:	Kevin Ditscheid <kevinditscheid@gmail.com>
+ *
+ *    Coded with Netbeans!
+ */
+temp.navigation = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+temp.navigation {
+    special = directory
+    special{
+        value = 0
+    }
+    as = navigation
+    levels = 1
+    excludeUidList = 
+    dataProcessing {
+        10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        10 {
+            references.fieldName = media
+        }
+    }
+}

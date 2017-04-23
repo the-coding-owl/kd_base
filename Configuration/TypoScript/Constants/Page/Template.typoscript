@@ -16,40 +16,4 @@ config{
         # cat=template//12; type=string; label= Template path to the site partials
         partialRootPath = EXT:kd_base/Resources/Private/Site/Partials/
     }
-    jquery{
-        # cat=jquery/enable/10; type=boolean; label= Enable jQuery
-        enable = 1
-        # cat=jquery//10; type=boolean; label= Load local jQuery: Load jQuery from local server, please be aware that if you do not provide a path to local jQuery directory with specified version, only jquery version 1.11.2 and 2.1.3 are supported
-        local = 0
-        # cat=jquery//20; type=string; label= Path to local jQuery
-        localPath = 
-        # cat=jquery//30; type=string; label= jQuery Version
-        version = 2.1.3
-        # cat=jquery//40; type=options[jQuery=1,Google=2,Microsoft=3,CDNJS=4,jsDelivr=5]; label= Available jQuery CDN: Choose the prevered CDN from which to load jQuery
-        cdn = 1
-        # cat=jquery//50; type=string; label= jQuery CDN URL: Fill in a path to your own jquery CDN(the version can not be applied then, you have to specify it in your cdn link)
-        cdnUrl = 
-    }
-    bootstrap{
-        # cat=bootstrap/enable/10; type=boolean; label= Enable Bootstrap
-        enable = 1
-        # cat=bootstrap//10; type=boolean; label= Load local Bootstrap: Load Bootstrap from local server, please be aware that if you do not provide a path to local Bootstrap directory with specified version, only Bootstrap version 3.3.5 is supported
-        local = 0
-        # cat=bootstrap//20; type=string; label= Path to local Bootstrap
-        localPath = 
-        # cat=bootstrap//30; type=string; label= Bootstrap Version
-        version = 3.3.5
-        # cat=bootstrap//40; type=options[Bootstrap=1]; label= Available Bootstrap CDN: Choose the prevered CDN from which to load Bootstrap
-        cdn = 1
-        # cat=bootstrap//50; type=string; label= Bootstrap CDN URL: Fill in a path to your own Bootstrap CDN(the version can not be applied then, you have to specify it in your cdn link)
-        cdnUrl = 
-        theme{
-             # cat=bootstrap//60; type=string; label= Bootstrap Theme CDN URL: Fill in a path to your own Bootstrap Theme CDN(the version can not be applied then, you have to specify it in your cdn link)
-            cdnUrl = 
-        }
-        js{
-            # cat=bootstrap//70; type=string; label= Bootstrap Javascript CDN URL: Fill in a path to your own Bootstrap Javascript CDN(the version can not be applied then, you have to specify it in your cdn link)
-            cdnUrl = 
-        }
-    }
 }

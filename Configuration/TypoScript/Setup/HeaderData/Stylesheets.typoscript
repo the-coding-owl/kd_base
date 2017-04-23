@@ -7,12 +7,16 @@
  *    Coded with Netbeans!
  */
 
+[globalVar = LIT:1 = {$config.stylesheets.include}]
 page.includeCSS{
     template = EXT:kd_base/Resources/Public/Stylesheets/template.css
 }
 page.includeCSSLibs{
-    
+    ubuntu-font = https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono
+	ubuntu-font.external = 1
 }
+[global]
+
 [globalVar = LIT:1 = {$config.bootstrap.enable} && globalVar = LIT:0 = {$config.bootstrap.local}]
 page.includeCSSLibs{
     bootstrap = {$config.bootstrap.cdnUrl}
@@ -33,9 +37,7 @@ page.includeCSSLibs{
 page.includeCSSLibs{
     bootstrap = {$config.bootstrap.localPath}/bootstrap-{$config.bootstrap.version}.min.css
     bootstrap.external = 0
-    bootstrap.ifEmpty = EXT:kd_base/Resources/Public/Stylesheets/Bootstrap/bootstrap-{$config.bootstrap.version}.min.css
     bootstrap-theme = {$config.bootstrap.localPath}/bootstrap-{$config.bootstrap.version}-theme.min.css
     bootstrap-theme.external = 0
-    bootstrap-theme.ifEmpty = EXT:kd_base/Resources/Public/Stylesheets/Bootstrap/bootstrap-{$config.bootstrap.version}-theme.min.css
 }
 [global]

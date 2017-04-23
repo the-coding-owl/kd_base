@@ -11,7 +11,7 @@
 config.language{
 	default{
 		# cat=language/default/10; type=int+; label= Sys language uid
-		sys_language_uid = 0
+		sys_language_uid = 1
 		# cat=language/default/20; type=string; label= Language
 		language = en
 		# cat=language/default/30; type=string; label= Language locale

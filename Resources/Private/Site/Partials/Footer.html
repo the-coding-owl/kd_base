@@ -1,4 +1,12 @@
-<f:format.raw><f:cObject typoscriptObjectPath="lib.footerNavigation" /></f:format.raw>
-<div class="copyright">
-    <f:format.raw><f:cObject typoscriptObjectPath="lib.copyright" /></f:format.raw>
-</div>
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+    <f:section name="main">
+        <f:render partial="Footer" section="copyright" />
+        <f:render partial="Navigation" section="footer" arguments="{menu: mainNavigation}" />
+    </f:section>
+    
+    <f:section name="copyright">
+        <div class="page-footer-copyright">
+            <span class="page-footer-copyright-author">{settings.copyright.author}</span>&lt;<f:link.email class="page-footer-copyright-email" email="{settings.copyright.email}" />&gt; {settings.copyright.extra}
+        </div>
+    </f:section>
+</html>

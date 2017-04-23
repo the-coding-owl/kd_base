@@ -12,6 +12,6 @@ config.logo{
     path = EXT:kd_base/Resources/Public/Images/logo.svg
     # cat=logo//20; type=string; label=The title of the logo
     title = The website logo
-    # cat=logo//30; type=string; label=The link wrapped around the logo
-    link = /
+    # cat=logo//30; type=string; label=The typolink wrapped around the logo
+    link = 1
 }

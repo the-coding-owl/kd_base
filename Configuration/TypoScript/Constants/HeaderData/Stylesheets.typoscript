@@ -1,0 +1,15 @@
+/*
+ *    Project:	kd_base
+ *    Version:	2.0.0
+ *    Date:		23.04.2017
+ *    Author:	Kevin Ditscheid <kevinditscheid@gmail.com>
+ *
+ *    Coded with Netbeans!
+ */
+
+config{
+    stylesheets{
+        # cat=plugin.kd_base.stylesheets/enable/10; type=boolean; label= Include the template.css file provided by kd_base
+        include = 1
+    }
+}
