@@ -39,5 +39,10 @@ body{
     display: inline-block;
 }
 .page-navigation-meta{
-    
+    font-size: 12px;
+    text-align: right;
+    float: right;
+}
+.page-navigation-meta .navigation{
+    display: inline-block;
 }
