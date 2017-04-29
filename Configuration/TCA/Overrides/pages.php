@@ -84,6 +84,7 @@ if (!defined('TYPO3_MODE')) {
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile('kd_base', 'Configuration/TsConfig/Page/BackendLayout.tsconfig', 'Backend Layout');
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile('kd_base', 'Configuration/TsConfig/Page/TCEFORM.tsconfig', 'TCEFORM configuration');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile('kd_base', 'Configuration/TsConfig/Page/RTE.tsconfig', 'RTE configuration');
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addUserTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:kd_base/Configuration/TsConfig/User/Admin.ts">');
 

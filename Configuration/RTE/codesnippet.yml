@@ -1,0 +1,11 @@
+## YAML Template.
+---
+imports:
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Default.yaml" }
+editor:
+  config:
+    extraPlugins:
+      - codesnippet
+    codeSnippet_theme: 'dark'
+    toolbarGroups:
+      - { name: codesnippet, groups: [ codesnippet ] }

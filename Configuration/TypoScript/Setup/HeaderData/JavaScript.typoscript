@@ -72,3 +72,11 @@ page.includeJSFooterlibs{
     jQuery.external = 0
 }   
 [global]
+[globalVar = LIT:1 = {$config.ckeditor.codesnippet.enable}]
+page.includeJSFooterlibs{
+    ckeCodesnippet = EXT:rte_ckeditor/Resources/Public/JavaScript/Contrib/plugins/codesnippet/lib/highlight/highlight.pack.js
+}
+page.includeJSFooter{
+    ckeCodesnippet-init = EXT:kd_base/Resources/Public/JavaScript/InitCodeHighlight.js
+}
+[global]

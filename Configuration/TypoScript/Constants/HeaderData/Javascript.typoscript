@@ -48,4 +48,10 @@ config{
             cdnUrl = 
         }
     }
+    ckeditor{
+        codesnippet{
+            # cat=ckeditor//10; type=boolean; label= Enable the CKEditor codesnippet plugin in the frontend
+            enable = 1
+        }
+    }
 }

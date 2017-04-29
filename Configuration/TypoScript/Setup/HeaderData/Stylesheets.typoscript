@@ -41,3 +41,8 @@ page.includeCSSLibs{
     bootstrap-theme.external = 0
 }
 [global]
+[globalVar = LIT:1 = {$config.ckeditor.codesnippet.enable}]
+page.includeCSSLibs{
+    ckeCodesnippet = EXT:rte_ckeditor/Resources/Public/JavaScript/Contrib/plugins/codesnippet/lib/highlight/styles/dark.css
+}
+[global]
