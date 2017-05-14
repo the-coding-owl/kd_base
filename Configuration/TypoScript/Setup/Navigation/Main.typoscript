@@ -8,11 +8,5 @@
  */
 
 page.10.dataProcessing{
-    1 < temp.navigation
-    1{
-        special.value = {$config.navigation.main.entry}
-        as = mainNavigation
-        levels = {$config.navigation.main.levels}
-        excludeUidList = {$config.navigation.main.excludeUidList}
-    }
+    1 < plugin.tx_easynavigation.main
 }

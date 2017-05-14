@@ -1,12 +1,12 @@
 /*
  *    Project:	kd_base
  *    Version:	2.0.0
- *    Date:		15.04.2017
+ *    Date:		14.05.2017
  *    Author:	Kevin Ditscheid <kevinditscheid@gmail.com>
  *
  *    Coded with Netbeans!
  */
 
 page.10.dataProcessing{
-    3 < plugin.tx_easynavigation.footer
+    5 < plugin.tx_easynavigation.breadcrumb
 }

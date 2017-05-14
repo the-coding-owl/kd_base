@@ -9,7 +9,6 @@
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:kd_base/Configuration/TypoScript/Constants/Config/" extension="typoscript">
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:kd_base/Configuration/TypoScript/Constants/Extensions/" extension="typoscript">
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:kd_base/Configuration/TypoScript/Constants/Language/" extension="typoscript">
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:kd_base/Configuration/TypoScript/Constants/Navigation/" extension="typoscript">
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:kd_base/Configuration/TypoScript/Constants/HeaderData/" extension="typoscript">
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:kd_base/Configuration/TypoScript/Constants/Page/" extension="typoscript">
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:kd_base/Configuration/TypoScript/Constants/Socials/" extension="typoscript">
