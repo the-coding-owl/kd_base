@@ -8,14 +8,18 @@
  */
 [globalVar = LIT:1 = {$config.bootstrap.enable}] && [globalVar = LIT:1 > {$config.bootstrap.local}]
 page.includeJSFooterlibs{
-    bootstrap = {$config.bootstrap.js.cdnUrl}
+    bootstrap = {$config.bootstrap.js.cdnUrl}/js/bootstrap.min.js
     bootstrap.external = 1
+    bootstrap.disableCompression = 1
+    bootstrap.excludeFromConcatenation = 1
 }
 [global]
 [globalVar = LIT:1 = {$config.bootstrap.enable}] && [globalVar = LIT:1 = {$config.bootstrap.cdn}] && [globalVar = LIT:1 > {$config.bootstrap.local}]
 page.includeJSFooterlibs{
     bootstrap = //maxcdn.bootstrapcdn.com/bootstrap/{$config.bootstrap.version}/js/bootstrap.min.js
     bootstrap.external = 1
+    bootstrap.disableCompression = 1
+    bootstrap.excludeFromConcatenation = 1
 }
 [global]
 [globalVar = LIT:1 = {$config.bootstrap.enable}] && [globalVar = LIT:1 = {$config.bootstrap.local}]
@@ -29,36 +33,48 @@ page.includeJSFooterlibs{
 page.includeJSFooterlibs{
     jQuery = {$config.jquery.cdnUrl}
     jQuery.external = 1
+    jQuery.disableCompression = 1
+    jQuery.excludeFromConcatenation = 1
 }
 [global]
 [globalVar = LIT:1 = {$config.jquery.enable}] && [globalVar = LIT:1 = {$config.jquery.cdn}] && [globalVar = LIT:0 = {$config.jquery.local}]
 page.includeJSFooterlibs{
     jQuery = //code.jquery.com/jquery-{$config.jquery.version}.min.js
     jQuery.external = 1
+    jQuery.disableCompression = 1
+    jQuery.excludeFromConcatenation = 1
 }
 [global]
 [globalVar = LIT:1 = {$config.jquery.enable}] && [globalVar = LIT:2 = {$config.jquery.cdn}] && [globalVar = LIT:0 = {$config.jquery.local}]
 page.includeJSFooterlibs{
     jQuery = //ajax.googleapis.com/ajax/libs/jquery/{$config.jquery.version}/jquery.min.js
     jQuery.external = 1
+    jQuery.disableCompression = 1
+    jQuery.excludeFromConcatenation = 1
 }
 [global]
 [globalVar = LIT:1 = {$config.jquery.enable}] && [globalVar = LIT:3 = {$config.jquery.cdn}] && [globalVar = LIT:0 = {$config.jquery.local}]
 page.includeJSFooterlibs{
     jQuery = //ajax.aspnetcdn.com/ajax/jQuery/jquery-{$config.jquery.version}.min.js
     jQuery.external = 1
+    jQuery.disableCompression = 1
+    jQuery.excludeFromConcatenation = 1
 }
 [global]
 [globalVar = LIT:1 = {$config.jquery.enable}] && [globalVar = LIT:4 = {$config.jquery.cdn}] && [globalVar = LIT:0 = {$config.jquery.local}]
 page.includeJSFooterLibs{
     jQuery = //cdnjs.cloudflare.com/ajax/libs/jquery/{$config.jquery.version}/jquery.min.js
     jQuery.external = 1
+    jQuery.disableCompression = 1
+    jQuery.excludeFromConcatenation = 1
 }
 [global]
 [globalVar = LIT:1 = {$config.jquery.enable}] && [globalVar = LIT:5 = {$config.jquery.cdn}] && [globalVar = LIT:0 = {$config.jquery.local}]
 page.includeJSFooterlibs{
     jQuery = //cdn.jsdelivr.net/jquery/{$config.jquery.version}/jquery.min.js
     jQuery.external = 1
+    jQuery.disableCompression = 1
+    jQuery.excludeFromConcatenation = 1
 }
 [global]
 [globalVar = LIT:1 = {$config.jquery.enable}] && [globalVar = LIT:1 = {$config.jquery.local}]

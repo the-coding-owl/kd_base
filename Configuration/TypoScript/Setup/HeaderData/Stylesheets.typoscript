@@ -19,18 +19,26 @@ page.includeCSSLibs{
 
 [globalVar = LIT:1 = {$config.bootstrap.enable}] && [globalVar = LIT:1 > {$config.bootstrap.local}]
 page.includeCSSLibs{
-    bootstrap = {$config.bootstrap.cdnUrl}
+    bootstrap = {$config.bootstrap.cdnUrl}/css/bootstrap.min.css
     bootstrap.external = 1
-    bootstrap-theme = {$config.bootstrap.theme.cdnUrl}
+    bootstrap.disableCompression = 1
+    bootstrap.excludeFromConcatenation = 1
+    bootstrap-theme = {$config.bootstrap.theme.cdnUrl}/css/bootstrap-theme.min.css
     bootstrap-theme.external = 1
+    bootstrap-theme.disableCompression = 1
+    bootstrap-theme.excludeFromConcatenation = 1
 }
 [global]
 [globalVar = LIT:1 = {$config.bootstrap.enable}] && [globalVar = LIT:1 = {$config.bootstrap.cdn}] && [globalVar = LIT:1 > {$config.bootstrap.local}]
 page.includeCSSLibs{
     bootstrap = //maxcdn.bootstrapcdn.com/bootstrap/{$config.bootstrap.version}/css/bootstrap.min.css
     bootstrap.external = 1
-    bootstrap-theme.ifEmpty = //maxcdn.bootstrapcdn.com/bootstrap/{$config.bootstrap.version}/css/bootstrap-theme.min.css
+    bootstrap.disableCompression = 1
+    bootstrap.excludeFromConcatenation = 1
+    bootstrap-theme = //maxcdn.bootstrapcdn.com/bootstrap/{$config.bootstrap.version}/css/bootstrap-theme.min.css
     bootstrap-theme.external = 1
+    bootstrap-theme.disableCompression = 1
+    bootstrap-theme.excludeFromConcatenation = 1
 }
 [global]
 [globalVar = LIT:1 = {$config.bootstrap.enable}] && [globalVar = LIT:1 = {$config.bootstrap.local}]
