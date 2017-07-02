@@ -17,7 +17,7 @@ page.includeCSSLibs{
 }
 [global]
 
-[globalVar = LIT:1 = {$config.bootstrap.enable} && globalVar = LIT:0 = {$config.bootstrap.local}]
+[globalVar = LIT:1 = {$config.bootstrap.enable}] && [globalVar = LIT:1 > {$config.bootstrap.local}]
 page.includeCSSLibs{
     bootstrap = {$config.bootstrap.cdnUrl}
     bootstrap.external = 1
@@ -25,9 +25,9 @@ page.includeCSSLibs{
     bootstrap-theme.external = 1
 }
 [global]
-[globalVar = LIT:1 = {$config.bootstrap.enable}] && [globalVar = LIT:1 = {$config.bootstrap.cdn}] && [globalVar = LIT:0 = {$config.bootstrap.local}]
+[globalVar = LIT:1 = {$config.bootstrap.enable}] && [globalVar = LIT:1 = {$config.bootstrap.cdn}] && [globalVar = LIT:1 > {$config.bootstrap.local}]
 page.includeCSSLibs{
-    bootstrap.ifEmpty = //maxcdn.bootstrapcdn.com/bootstrap/{$config.bootstrap.version}/css/bootstrap.min.css
+    bootstrap = //maxcdn.bootstrapcdn.com/bootstrap/{$config.bootstrap.version}/css/bootstrap.min.css
     bootstrap.external = 1
     bootstrap-theme.ifEmpty = //maxcdn.bootstrapcdn.com/bootstrap/{$config.bootstrap.version}/css/bootstrap-theme.min.css
     bootstrap-theme.external = 1
