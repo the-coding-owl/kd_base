@@ -1,9 +1,8 @@
-# Apache < 2.3
 <IfModule !mod_authz_core.c>
 	Order allow,deny
 	Deny from all
 	<Files ext_icon.*>
-		Order Allow, Deny
+		Order Allow,Deny
 		Allow from All
 	</Files>
 </IfModule>
