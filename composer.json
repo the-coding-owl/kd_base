@@ -32,7 +32,7 @@
 		"typo3/cms-viewpage": "^8.7",
         "the-coding-owl/easy-navigation": "^1.0"
     },
-    "license": "GPLv3",
+    "license": "GPL-3.0-or-later",
     "authors": [
         {
             "name": "Kevin Ditscheid",
