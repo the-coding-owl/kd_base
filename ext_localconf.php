@@ -15,4 +15,6 @@
 
 defined('TYPO3_MODE') or die('Access denied!');
 
-$GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['codesnippet'] = 'EXT:kd_base/Configuration/RTE/codesnippet.yml';
+call_user_func(function($extKey) {
+    $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['codesnippet'] = 'EXT:' . $extKey . '/Configuration/RTE/codesnippet.yml';
+} , 'kd_base');

@@ -6,9 +6,9 @@
  *
  *    Coded with Netbeans!
  */
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:kd_base/Configuration/TypoScript/Constants/Config/" extension="typoscript">
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:kd_base/Configuration/TypoScript/Constants/Extensions/" extension="typoscript">
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:kd_base/Configuration/TypoScript/Constants/Language/" extension="typoscript">
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:kd_base/Configuration/TypoScript/Constants/HeaderData/" extension="typoscript">
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:kd_base/Configuration/TypoScript/Constants/Page/" extension="typoscript">
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:kd_base/Configuration/TypoScript/Constants/Socials/" extension="typoscript">
+@import 'EXT:kd_base/Configuration/TypoScript/Constants/Config/*.typoscript'
+@import 'EXT:kd_base/Configuration/TypoScript/Constants/Extensions/*.typoscript
+@import 'EXT:kd_base/Configuration/TypoScript/Constants/Language/*.typoscript
+@import 'EXT:kd_base/Configuration/TypoScript/Constants/HeaderData/*.typoscript
+@import 'EXT:kd_base/Configuration/TypoScript/Constants/Page/*.typoscript
+@import 'EXT:kd_base/Configuration/TypoScript/Constants/Socials/*.typoscript

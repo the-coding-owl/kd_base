@@ -12,8 +12,6 @@ config.debug{
     debugAll = 0
     # cat=debug/enable/10; type=boolean; label=Disable the content object exception handler
     disableContentObjectExteptionHandler = 0
-    # cat=debug/enable/20; type=boolean; label=Disable realurl
-    disableRealurl = 0
     # cat=debug/enable/30; type=boolean; label=Enable the admin panel
     admPanelEnable = 0
     # cat=debug/enable/40; type=boolean; label=Disable the compression of JavaScript and CSS

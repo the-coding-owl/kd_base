@@ -7,62 +7,62 @@
  *    Coded with Netbeans!
  */
 
-[globalVar = LIT:1 = {$config.jquery.enable}] && [globalVar = LIT:1 > {$config.jquery.local}]
+[{$config.jquery.enable} == 1] && [{$config.jquery.local} < 1]
 page.includeJSFooterlibs{
     jQuery = {$config.jquery.cdnUrl}
     jQuery.external = 1
     jQuery.disableCompression = 1
     jQuery.excludeFromConcatenation = 1
 }
-[global]
-[globalVar = LIT:1 = {$config.jquery.enable}] && [globalVar = LIT:1 = {$config.jquery.cdn}] && [globalVar = LIT:1 > {$config.jquery.local}]
+[END]
+[{$config.jquery.enable} == 1] && [{$config.jquery.cdn} == 1] && [{$config.jquery.local} < 1]
 page.includeJSFooterlibs{
     jQuery = //code.jquery.com/jquery-{$config.jquery.version}.min.js
     jQuery.external = 1
     jQuery.disableCompression = 1
     jQuery.excludeFromConcatenation = 1
 }
-[global]
-[globalVar = LIT:1 = {$config.jquery.enable}] && [globalVar = LIT:2 = {$config.jquery.cdn}] && [globalVar = LIT:1 > {$config.jquery.local}]
+[END]
+[{$config.jquery.enable} == 1] && [{$config.jquery.cdn} == 2] && [{$config.jquery.local} < 1]
 page.includeJSFooterlibs{
     jQuery = //ajax.googleapis.com/ajax/libs/jquery/{$config.jquery.version}/jquery.min.js
     jQuery.external = 1
     jQuery.disableCompression = 1
     jQuery.excludeFromConcatenation = 1
 }
-[global]
-[globalVar = LIT:1 = {$config.jquery.enable}] && [globalVar = LIT:3 = {$config.jquery.cdn}] && [globalVar = LIT:1 > {$config.jquery.local}]
+[END]
+[{$config.jquery.enable} == 1] && [{$config.jquery.cdn} == 3] && [{$config.jquery.local} < 1]
 page.includeJSFooterlibs{
     jQuery = //ajax.aspnetcdn.com/ajax/jQuery/jquery-{$config.jquery.version}.min.js
     jQuery.external = 1
     jQuery.disableCompression = 1
     jQuery.excludeFromConcatenation = 1
 }
-[global]
-[globalVar = LIT:1 = {$config.jquery.enable}] && [globalVar = LIT:4 = {$config.jquery.cdn}] && [globalVar = LIT:1 > {$config.jquery.local}]
+[END]
+[{$config.jquery.enable} == 1] && [{$config.jquery.cdn} == 4] && [{$config.jquery.local} < 1]
 page.includeJSFooterLibs{
     jQuery = //cdnjs.cloudflare.com/ajax/libs/jquery/{$config.jquery.version}/jquery.min.js
     jQuery.external = 1
     jQuery.disableCompression = 1
     jQuery.excludeFromConcatenation = 1
 }
-[global]
-[globalVar = LIT:1 = {$config.jquery.enable}] && [globalVar = LIT:5 = {$config.jquery.cdn}] && [globalVar = LIT:1 > {$config.jquery.local}]
+[END]
+[{$config.jquery.enable} == 1] && [{$config.jquery.cdn} == 5] && [{$config.jquery.local} < 1]
 page.includeJSFooterlibs{
     jQuery = //cdn.jsdelivr.net/jquery/{$config.jquery.version}/jquery.min.js
     jQuery.external = 1
     jQuery.disableCompression = 1
     jQuery.excludeFromConcatenation = 1
 }
-[global]
-[globalVar = LIT:1 = {$config.jquery.enable}] && [globalVar = LIT:1 = {$config.jquery.local}]
+[END]
+[{$config.jquery.enable} == 1] && [{$config.jquery.local} == 1]
 page.includeJSFooterlibs{
     jQuery = {$config.jquery.localPath}/jquery-{$config.jquery.version}.min.js
     jQuery.external = 0
 }
-[global]
+[END]
 
-[globalVar = LIT:1 = {$config.bootstrap.enable}] && [globalVar = LIT:1 > {$config.bootstrap.local}]
+[{$config.bootstrap.enable} == 1] && [{$config.bootstrap.local} < 1]
 page.includeJSFooterlibs{
     bootstrap = {$config.bootstrap.js.cdnUrl}/js/bootstrap.min.js
     bootstrap.external = 1
@@ -70,32 +70,32 @@ page.includeJSFooterlibs{
     bootstrap.excludeFromConcatenation = 1
 }
 [global]
-[globalVar = LIT:1 = {$config.bootstrap.enable}] && [globalVar = LIT:1 = {$config.bootstrap.cdn}] && [globalVar = LIT:1 > {$config.bootstrap.local}]
+[{$config.bootstrap.enable} == 1] && [{$config.bootstrap.cdn} == 1] && [{$config.bootstrap.local} < 1]
 page.includeJSFooterlibs{
     bootstrap = //maxcdn.bootstrapcdn.com/bootstrap/{$config.bootstrap.version}/js/bootstrap.min.js
     bootstrap.external = 1
     bootstrap.disableCompression = 1
     bootstrap.excludeFromConcatenation = 1
 }
-[global]
-[globalVar = LIT:1 = {$config.bootstrap.enable}] && [globalVar = LIT:1 = {$config.bootstrap.local}]
+[END]
+[{$config.bootstrap.enable} == 1] && [{$config.bootstrap.local} == 1]
 page.includeJSFooterlibs{
     bootstrap = {$config.bootstrap.localPath}/bootstrap-{$config.bootstrap.version}.min.js
     bootstrap.external = 0
 }
-[global]
+[END]
 
-[globalVar = LIT:1 = {$config.javascript.include}]
+[{$config.javascript.include} == 1]
 page.includeJS{
     template = EXT:kd_base/Resources/Public/JavaScript/template.js
 }
-[global]
+[END]
 
-[globalVar = LIT:1 = {$config.ckeditor.codesnippet.enable}]
+[{$config.ckeditor.codesnippet.enable} == 1]
 page.includeJSFooterlibs{
     ckeCodesnippet = EXT:rte_ckeditor/Resources/Public/JavaScript/Contrib/plugins/codesnippet/lib/highlight/highlight.pack.js
 }
 page.includeJSFooter{
     ckeCodesnippet-init = EXT:kd_base/Resources/Public/JavaScript/InitCodeHighlight.js
 }
-[global]
+[END]

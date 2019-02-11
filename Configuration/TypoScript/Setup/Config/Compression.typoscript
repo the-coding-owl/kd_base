@@ -4,7 +4,7 @@ config{
     concatenateCss = 1
     concatenateJs = 1
 }
-[globalVar = LIT:1 = {$config.debug.disableCompression}] || [globalVar = LIT:1 = {$config.debug.debugAll}]
+[{$config.debug.disableCompression} == 1] || [{$config.debug.debugAll} == 1]
 config{
     compressCss = 0
     compressJs = 0
@@ -12,5 +12,5 @@ config{
     concatenateJs = 0
     sendCacheHeaders = 0
 }
-[global]
+[END]
 

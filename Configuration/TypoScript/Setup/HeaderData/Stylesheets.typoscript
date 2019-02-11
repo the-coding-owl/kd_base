@@ -7,7 +7,7 @@
  *    Coded with Netbeans!
  */
 
-[globalVar = LIT:1 = {$config.stylesheets.include}]
+[{$config.stylesheets.include} == 1]
 page.includeCSS{
     template = EXT:kd_base/Resources/Public/Stylesheets/template.css
 }
@@ -15,9 +15,9 @@ page.includeCSSLibs{
     ubuntu-font = https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono
 	ubuntu-font.external = 1
 }
-[global]
+[END]
 
-[globalVar = LIT:1 = {$config.bootstrap.enable}] && [globalVar = LIT:1 > {$config.bootstrap.local}]
+[{$config.bootstrap.enable} == 1] && [{$config.bootstrap.local} < 1]
 page.includeCSSLibs{
     bootstrap = {$config.bootstrap.cdnUrl}/css/bootstrap.min.css
     bootstrap.external = 1
@@ -28,8 +28,8 @@ page.includeCSSLibs{
     bootstrap-theme.disableCompression = 1
     bootstrap-theme.excludeFromConcatenation = 1
 }
-[global]
-[globalVar = LIT:1 = {$config.bootstrap.enable}] && [globalVar = LIT:1 = {$config.bootstrap.cdn}] && [globalVar = LIT:1 > {$config.bootstrap.local}]
+[END]
+[{$config.bootstrap.enable} == 1] && [{$config.bootstrap.cdn} == 1] && [{$config.bootstrap.local} < 1]
 page.includeCSSLibs{
     bootstrap = //maxcdn.bootstrapcdn.com/bootstrap/{$config.bootstrap.version}/css/bootstrap.min.css
     bootstrap.external = 1
@@ -40,17 +40,17 @@ page.includeCSSLibs{
     bootstrap-theme.disableCompression = 1
     bootstrap-theme.excludeFromConcatenation = 1
 }
-[global]
-[globalVar = LIT:1 = {$config.bootstrap.enable}] && [globalVar = LIT:1 = {$config.bootstrap.local}]
+[END]
+[{$config.bootstrap.enable} == 1] && [{$config.bootstrap.local} == 1]
 page.includeCSSLibs{
     bootstrap = {$config.bootstrap.localPath}/bootstrap-{$config.bootstrap.version}.min.css
     bootstrap.external = 0
     bootstrap-theme = {$config.bootstrap.localPath}/bootstrap-{$config.bootstrap.version}-theme.min.css
     bootstrap-theme.external = 0
 }
-[global]
-[globalVar = LIT:1 = {$config.ckeditor.codesnippet.enable}]
+[END]
+[{$config.ckeditor.codesnippet.enable} == 1]
 page.includeCSSLibs{
     ckeCodesnippet = EXT:rte_ckeditor/Resources/Public/JavaScript/Contrib/plugins/codesnippet/lib/highlight/styles/dark.css
 }
-[global]
+[END]

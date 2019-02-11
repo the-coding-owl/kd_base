@@ -6,10 +6,10 @@
  *
  *    Coded with Netbeans!
  */
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:kd_base/Configuration/TypoScript/Setup/Config/" extension="typoscript">
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:kd_base/Configuration/TypoScript/Setup/Extensions/" extension="typoscript">
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:kd_base/Configuration/TypoScript/Setup/HeaderData/" extension="typoscript">
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:kd_base/Configuration/TypoScript/Setup/Language/" extension="typoscript">
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:kd_base/Configuration/TypoScript/Setup/Navigation/" extension="typoscript">
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:kd_base/Configuration/TypoScript/Setup/Socials/" extension="typoscript">
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:kd_base/Configuration/TypoScript/Setup/Page/" extension="typoscript">
+@import 'EXT:kd_base/Configuration/TypoScript/Setup/Config/*.typoscript
+@import 'EXT:kd_base/Configuration/TypoScript/Setup/Extensions/*.typoscript
+@import 'EXT:kd_base/Configuration/TypoScript/Setup/HeaderData/*.typoscript
+@import 'EXT:kd_base/Configuration/TypoScript/Setup/Language/*.typoscript
+@import 'EXT:kd_base/Configuration/TypoScript/Setup/Navigation/*.typoscript
+@import 'EXT:kd_base/Configuration/TypoScript/Setup/Socials/*.typoscript
+@import 'EXT:kd_base/Configuration/TypoScript/Setup/Page/*.typoscript

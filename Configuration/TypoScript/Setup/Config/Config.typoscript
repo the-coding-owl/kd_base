@@ -15,9 +15,9 @@ config{
     spamProtectEmailAddresses_atSubst = (at)
     spamProtectEmailAddresses_lastDotSubst = .
 }
-[globalVar = LIT:1 = {$config.debug.disableContentObjectExteptionHandler}] || [globalVar = LIT:1 = {$config.debug.debugAll}]
+[{$config.debug.disableContentObjectExteptionHandler} == 1] || [{$config.debug.debugAll} == 1]
 config.contentObjectExceptionHandler = 0
-[global]
-[globalVar = LIT:1 = {$config.debug.admPanelEnable}] || [globalVar = LIT:1 = {$config.debug.debugAll}]
+[END]
+[{$config.debug.admPanelEnable} == 1] || [{$config.debug.debugAll} == 1]
 config.admPanel = 1
-[global]
+[END]
