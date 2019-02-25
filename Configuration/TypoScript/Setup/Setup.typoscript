@@ -6,10 +6,9 @@
  *
  *    Coded with Netbeans!
  */
-@import 'EXT:kd_base/Configuration/TypoScript/Setup/Config/*.typoscript
-@import 'EXT:kd_base/Configuration/TypoScript/Setup/Extensions/*.typoscript
-@import 'EXT:kd_base/Configuration/TypoScript/Setup/HeaderData/*.typoscript
-@import 'EXT:kd_base/Configuration/TypoScript/Setup/Language/*.typoscript
-@import 'EXT:kd_base/Configuration/TypoScript/Setup/Navigation/*.typoscript
-@import 'EXT:kd_base/Configuration/TypoScript/Setup/Socials/*.typoscript
-@import 'EXT:kd_base/Configuration/TypoScript/Setup/Page/*.typoscript
+@import 'EXT:kd_base/Configuration/TypoScript/Setup/Config/*.typoscript'
+@import 'EXT:kd_base/Configuration/TypoScript/Setup/HeaderData/*.typoscript'
+@import 'EXT:kd_base/Configuration/TypoScript/Setup/Language/*.typoscript'
+@import 'EXT:kd_base/Configuration/TypoScript/Setup/Navigation/*.typoscript'
+@import 'EXT:kd_base/Configuration/TypoScript/Setup/Socials/*.typoscript'
+@import 'EXT:kd_base/Configuration/TypoScript/Setup/Page/*.typoscript'

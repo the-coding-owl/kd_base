@@ -7,8 +7,8 @@
  *    Coded with Netbeans!
  */
 @import 'EXT:kd_base/Configuration/TypoScript/Constants/Config/*.typoscript'
-@import 'EXT:kd_base/Configuration/TypoScript/Constants/Extensions/*.typoscript
-@import 'EXT:kd_base/Configuration/TypoScript/Constants/Language/*.typoscript
-@import 'EXT:kd_base/Configuration/TypoScript/Constants/HeaderData/*.typoscript
-@import 'EXT:kd_base/Configuration/TypoScript/Constants/Page/*.typoscript
-@import 'EXT:kd_base/Configuration/TypoScript/Constants/Socials/*.typoscript
+@import 'EXT:kd_base/Configuration/TypoScript/Constants/Extensions/*.typoscript'
+@import 'EXT:kd_base/Configuration/TypoScript/Constants/Language/*.typoscript'
+@import 'EXT:kd_base/Configuration/TypoScript/Constants/HeaderData/*.typoscript'
+@import 'EXT:kd_base/Configuration/TypoScript/Constants/Page/*.typoscript'
+@import 'EXT:kd_base/Configuration/TypoScript/Constants/Socials/*.typoscript'
