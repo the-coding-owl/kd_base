@@ -27,18 +27,18 @@
             --></ul><!--
         --></nav>
     </f:section>
-    
+
     <f:section name="languageFlag">
         <f:switch expression="{flag}">
             <f:case value="en-us-gb">
                 <img src="{f:uri.resource(path:'Icons/Flags/en_us-gb.png',extensionName:'core')}" width="{flagWidth}" />
             </f:case>
-            <f:case default="TRUE">
+            <f:defaultCase>
                 <img src="{f:uri.resource(path:'Icons/Flags/PNG/{flag -> f:format.case()}.png',extensionName:'core')}" width="{flagWidth}" />
-            </f:case>
+            </f:defaultCase>
         </f:switch>
     </f:section>
-    
+
     <f:section name="meta">
         <f:if condition="{menu}">
             <nav class="page-navigation-meta"><!--
@@ -46,7 +46,7 @@
             --></nav>
         </f:if>
     </f:section>
-    
+
 	<f:section name="footer">
 		<f:if condition="{menu}">
 			<nav class="page-navigation-footer"><!--
@@ -54,7 +54,7 @@
 			--></nav>
 		</f:if>
 	</f:section>
-    
+
     <f:section name="general">
         <ul class="navigation"><!--
             --><f:for each="{menu}" as="page"><!--
