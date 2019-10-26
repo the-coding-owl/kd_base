@@ -28,7 +28,6 @@
         }
     ],
 	"replace": {
-		"kd_base": "self.version",
 		"typo3-ter/kd-base": "self.version"
 	}
 }
