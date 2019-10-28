@@ -11,7 +11,7 @@ config.copyright{
     # cat=copyright//10; type=string; label= The author of the website
     author = Kevin Ditscheid
     # cat=copyright//20; type=string; label= The email of the author of the website
-    email = kevinditscheid@gmail.com
+    email = kevin@the-coding-owl.de
     # cat=copyright//30; type=string; label= An extra string, appended to the copyright
     extra = Powered by TYPO3
 }
