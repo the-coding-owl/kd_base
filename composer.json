@@ -3,7 +3,7 @@
     "description": "A base distribution that provides a basic configuration for TYPO3 CMS",
     "type": "typo3-cms-extension",
     "require": {
-        "typo3/minimal": "~10.1.0",
+        "typo3/minimal": "^10.1.0",
     		"typo3/cms-fluid-styled-content": "^10.1.0",
     		"typo3/cms-belog": "^10.1.0",
     		"typo3/cms-beuser": "^10.1.0",
