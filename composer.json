@@ -24,8 +24,5 @@
             "name": "Kevin Ditscheid",
             "email": "kevinditscheid@gmail.com"
         }
-    ],
-	"replace": {
-		"typo3-ter/kd-base": "self.version"
-	}
+    ]
 }
