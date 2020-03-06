@@ -15,6 +15,7 @@ page{
 			10 = {$config.view.templateRootPath}
 		}
 		partialRootPaths{
+            5 = {$plugin.tx_easynavigation.view.partialRootPath}
 			10 = {$config.view.partialRootPath}
 		}
 		layoutRootPaths{
