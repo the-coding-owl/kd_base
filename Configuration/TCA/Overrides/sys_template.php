@@ -13,7 +13,7 @@
  * The TYPO3 project - inspiring people to share!
  */
 if (!defined('TYPO3_MODE')) {
-	die('Access denied.');
+    die('Access denied.');
 }
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile('kd_base', 'Configuration/TypoScript', 'Base Package Template');
