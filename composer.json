@@ -33,5 +33,10 @@
         "issues": "https://github.com/the-coding-owl/kd_base/issues",
         "source": "https://github.com/the-coding-owl/kd_base"
     },
-    "homepage": "https://github.com/the-coding-owl/kd_base"
+    "homepage": "https://github.com/the-coding-owl/kd_base",
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "kd_base"
+        }
+    }
 }
