@@ -21,7 +21,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'uploadfolder' => '0',
 	'createDirs' => '',
 	'clearCacheOnLoad' => 0,
-	'version' => '2.1.0',
+	'version' => '2.1.1',
 	'constraints' => array(
 		'depends' => array(
 			'backend' => '10.1',
@@ -45,7 +45,7 @@ $EM_CONF[$_EXTKEY] = array(
 			'setup' => '10.1',
 			'tstemplate' => '10.1',
 			'viewpage' => '10.1',
-			'easy_navigation' => '2.0'
+			'easy_navigation' => '2.1'
 		),
 		'conflicts' => array(
 		),
