@@ -44,7 +44,7 @@ page{
 			foot < styles.content.get
 			foot.select.where = colPos=2
 			pagetitle = TEXT
-			pagetitle.value < sitetitle
+			pagetitle.data = site:websiteTitle
 			copyright = CONTENT
 			copyright{
 				table = tt_content
