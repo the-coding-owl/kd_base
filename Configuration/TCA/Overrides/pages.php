@@ -22,6 +22,7 @@ if (!defined('TYPO3_MODE')) {
         'label' => 'LLL:EXT:kd_base/Resources/Private/Language/locallang_db.xlf:pages.robots_index',
         'config' => array(
             'type' => 'select',
+            'renderType' => 'selectSingle',
             'items' => array(
                 array('LLL:EXT:kd_base/Resources/Private/Language/locallang_db.xlf:pages.robots_index.index','index'),
                 array('LLL:EXT:kd_base/Resources/Private/Language/locallang_db.xlf:pages.robots_index.noindex','noindex'),
@@ -33,6 +34,7 @@ if (!defined('TYPO3_MODE')) {
         'label' => 'LLL:EXT:kd_base/Resources/Private/Language/locallang_db.xlf:pages.robots_follow',
         'config' => array(
             'type' => 'select',
+            'renderType' => 'selectSingle',
             'items' => array(
                 array('LLL:EXT:kd_base/Resources/Private/Language/locallang_db.xlf:pages.robots_follow.follow','follow'),
                 array('LLL:EXT:kd_base/Resources/Private/Language/locallang_db.xlf:pages.robots_follow.nofollow','nofollow'),
