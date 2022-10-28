@@ -12,7 +12,7 @@
  *
  * The TYPO3 project - inspiring people to share!
  */
-if (!defined('TYPO3_MODE')) {
+if (!defined('TYPO3')) {
     die('Access denied.');
 }
 
