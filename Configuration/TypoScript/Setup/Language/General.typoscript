@@ -8,7 +8,6 @@
  */
 
 config{
-    linkVars = L
     metaCharset = {$config.language.config.metaCharset}
     sys_language_mode = {$config.language.config.sys_language_mode}
     sys_language_overlay = {$config.language.config.sys_language_overlay}
