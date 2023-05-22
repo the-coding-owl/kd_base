@@ -13,8 +13,6 @@
  * The TYPO3 project - inspiring people to share!
  */
 
-defined('TYPO3') or die('Access denied!');
-
 call_user_func(function($extKey) {
     $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['codesnippet'] = 'EXT:' . $extKey . '/Configuration/RTE/codesnippet.yml';
 } , 'kd_base');
