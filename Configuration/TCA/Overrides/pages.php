@@ -12,9 +12,6 @@
  *
  * The TYPO3 project - inspiring people to share!
  */
-if (!defined('TYPO3')) {
-    die('Access denied.');
-}
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('pages', array(
     'robots_index' => array(
